@@ -1,235 +1,140 @@
-<!DOCTYPE html>
-                    <html lang="es">
-                        <head>
-                            <meta name="Copyright" content="Cristian Borghello, Marcelo Temperini, Maximiliano Macedo">
-                            <meta charset="utf-8">
-                            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                            <meta name="viewport" content="width=device-width, initial-scale=1">
-                            <meta name="description" content="ODILA - Observatorio de Delitos Inform·ticos de LatinoamÈrica">
-                            <meta name="keywords" content="denunciar delitos inform·ticos, denunciar delitos inform·ticos online, reportar delito informatico, cibercrimen, delitos informaticos, denunciar grooming, denunciar pornografÌa infantil, denunciar violaciÛn correo electrÛnico, denuncias inform·ticas, encuesta delitos informaticos, estafa inform·tica, fraude inform·tico, hacking, informar delito inform·tico, legislacion delitos informaticos, observatorio delitos inform·ticos, phishing, reportar delito informatico, suplantaciÛn identidad, violaciÛn datos personales">
-                            
-                            <title>ODILA - Denunciar Delitos Inform·ticos en LatinoamÈrica</title>
-                            
-                            <!-- Favicon -->
-                            <script type="text/javascript">
-//<![CDATA[
-try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"eac28b320a39aae89d47f69e2fd7ded1",petok:"35da53f73e8754bb5c6ffc60ea8ff2ba60182600-1491317545-1800",zone:"odila.org",rocket:"0",apps:{"ga_key":{"ua":"UA-55073911-1","ga_bs":"2"}}}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=f2befc48d1/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
-//]]>
-</script>
-<link href="imgs/iconos/favicon.ico" rel="icon" type="image/x-icon">
-                            <link href="imgs/iconos/favicon.ico" rel="shortcut icon" type="image/x-icon">
-                            
-                            <!-- Bootstrap -->
-                            <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-                            <link href="includes/bootstrap/css/custom.css" rel="stylesheet">
-                            
-                            <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-                            <!--[if lt IE 9]>
-                                <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-                                <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
-                            <![endif]-->
-                            
-                            <!-- jQuery -->
-                            <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-                            <!-- Include all compiled plugins (below), or include individual files as needed -->
-                            <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-							<!-- Agrega Datepicker -->
-                            <script type="text/javascript" src="includes/modernizr/modernizr.custom.76434.js"></script>
-                            
-                            <!-- CSS Global -->
-                            <link href="includes/css/style.css" rel="stylesheet" type="text/css" title="estiloGlobal"/>
-                            
-                            <!-- Fonts -->
-							 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-							 
-                            <link href="includes/fonts/montserrat2.css" rel="stylesheet" type="text/css">
-
-                            <!-- Javascripts -->
-							<script type="text/javascript" src="includes/js/jquery.bxslider.js"></script>
-							<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-                            <script type="text/javascript" src="includes/js/classie.js"></script>
-                            <script type="text/javascript" src="includes/js/cbpAnimatedHeader.js"></script>
-                            <script type="text/javascript" src="includes/js/page-scroll.js"></script>
-                            <script type="text/javascript" src="includes/js/form.js"></script>
-							
-							<script>Modernizr.load({
-								test: Modernizr.inputtypes.date,
-								nope: ["//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js", "//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js", "//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css"],
-								complete: function () {
-									$("input[type=date]").datepicker({
-										dateFormat: "dd-mm-yy",
-										minDate: new Date(2010, 1-1, 1),
-										maxDate: "+0d"
-									}); 
-								}
-							});
-							</script>
-							
-                        <script type="text/javascript">
-/* <![CDATA[ */
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-55073911-1']);
-_gaq.push(['_trackPageview']);
-
-(function() {
-var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-
-(function(b){(function(a){"__CF"in b&&"DJS"in b.__CF?b.__CF.DJS.push(a):"addEventListener"in b?b.addEventListener("load",a,!1):b.attachEvent("onload",a)})(function(){"FB"in b&&"Event"in FB&&"subscribe"in FB.Event&&(FB.Event.subscribe("edge.create",function(a){_gaq.push(["_trackSocial","facebook","like",a])}),FB.Event.subscribe("edge.remove",function(a){_gaq.push(["_trackSocial","facebook","unlike",a])}),FB.Event.subscribe("message.send",function(a){_gaq.push(["_trackSocial","facebook","send",a])}));"twttr"in b&&"events"in twttr&&"bind"in twttr.events&&twttr.events.bind("tweet",function(a){if(a){var b;if(a.target&&a.target.nodeName=="IFRAME")a:{if(a=a.target.src){a=a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf("url")===0){b=unescape(c.split("=")[1]);break a}}b=void 0}_gaq.push(["_trackSocial","twitter","tweet",b])}})})})(window);
-/* ]]> */
-</script>
-</head><body id="page-top" class="index"><nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-                    <div class="container">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header  page-scroll">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button><a class="navbar-brand" href="/"><img src="/imgs/logos/logo-odila.png" alt="ODILA - Denunciar Delitos Inform·ticos en LatinoamÈrica"></a></div>
-			<!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						
-                            <ul class="nav navbar-nav navbar-right">
-                                <li class="page-scroll"><a href="http://odila.org/#Quienes">Quienes Somos</a></li><li class="page-scroll"><a href="http://odila.org/#Denuncia">Denunciar</a></li><li class="page-scroll"><a href="glosario">Glosario</a></li><li class="page-scroll"><a href="difusion">DifusiÛn</a></li><li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reportes <b class="caret"></b></a>
-                            <ul class="dropdown-menu"><li class="page-scroll"><a href="http://odila.org/reporte-2015">Reporte 2015</a></li><li class="page-scroll"><a href="http://odila.org/reporte">Reporte 2016</a></li></ul>
-                        </li><li class="page-scroll"><a href="http://odila.org/#Contacto">Contacto</a></li>
-                            </ul>       </div><!-- /.navbar-collapse -->
-                    </div><!-- /.container-fluid -->
-                </nav><section id="Glosario"  class="success" >
-                    <div class="container">
-  <div class="row principal">
-					<div class="col-lg-12 text-center">
-					  <h2>Glosario</h2>
-					</div>
-				  </div>
+<section id="Glosario"  class="success" >
+  <div class="container">
+    <div class="row principal">
+      <div class="col-lg-12 text-center">
+        <h2>Glosario</h2>
+      </div>
+    </div>
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 glosario">
-			<h3>AMENAZA</h3>
-			<p>Delito consistente en intimidar a alguien con el anuncio de la provocaciÛn de un mal grave para Èl o su familia.</p>
-			<p><em>Real Academia EspaÒola</em></p>
-			<h3>CALUMNIA</h3>
-			<p>AcusaciÛn falsa, hecha maliciosamente para causar daÒo. ImputaciÛn de un delito hecha a sabiendas de su falsedad.</p>
-			<p><em>Real Academia EspaÒola</em></p> 
-			<h3>CIBERCRIMEN</h3>
-			<p>Ver DELITO INFORM¡TICO</p>
-			<h3>CIBERDELITO O CIBERDELINCUENCIA</h3>
-			<p>Ver DELITO INFORM¡TICO</p>
-			<h3>CIFRA NEGRA</h3>
-			<p>La cifra negra es lo m·s prÛximo numÈricamente a la cantidad real de crÌmenes cometidos en una sociedad determinada. La relaciÛn de tensiÛn existente entre delitos realmente cometidos y los efectivamente tratados por el aparato penal, engloba a la mayor cantidad de vÌctimas que ni siquiera ser·n atendidas, tratadas ni conocidas por el segmento penal, y a las cuales el Estado no da respuesta alguna. De acuerdo a Aller, tal proceso "empuja" a las personas a no denunciar los actos ilÌcitos, a no reconocerse a sÌ mismas como vÌctimas y, en consecuencia, a la impunidad que el infractor penal asume, puesto que en el acto desvalorado no vislumbra un referente social acompasado del penal, en tanto a su conducta es delictiva, pero el n˙cleo social o persona menoscabada por el delito que se ha cometido no pone en evidencia tal dan~o, y por ende, tampoco el segmento penal podr· operar en su contra.</p>
-			<p><em>ALLER, Germ·n. "Cuestiones VictimolÛgicas de Actualidad: Origen de la VictimologÌa, Seguridad, Cifra Negra, PersonalizaciÛn del Conflicto y Proceso Penal". Revista ILANUD Nro. 27, 2006.</em></p>
-			<h3>CRACKING</h3>
-			<p>El cracking es una figura emparentada con el hacking, cuya conducta tÌpica consiste en acceder a sistemas inform·ticos de forma no autorizada, del mismo modo que en el hacking, y con una finalidad clara: menoscabar la integridad, disponibilidad y acceso a la informaciÛn disponible en dicho sitio Web o en el sistema inform·tico.</p>
-			<p>El desarrollo de esta actividad implica que se est· cometiendo un acto delictivo, por estar viol·ndose la intimidad del afectado, la confidencialidad de la informaciÛn y concretamente en el caso del cracking, por el hecho de haber causado daÒos, cambios y/o destrucciÛn de informaciÛn asÌ como haber inhabilitado soportes fÌsicos tales como servidores, discos duros, etc.</p>
-			<h3>DATO PERSONAL</h3>
-			<p>InformaciÛn de cualquier tipo referida a personas fÌsicas o de existencia ideal determinadas o determinables.</p>
-			<p><em>Ley 25.326 (Datos Personales, Argentina).</em></p>
-			<h3>DELITO INFORM¡TICO</h3>
-			<p>Un delito inform·tico, cibercrimen o ciberdelicuencia es toda aquella acciÛn, tÌpica, antijurÌdica y culpable, que se da por vÌas inform·ticas o que tiene como objetivo destruir y daÒar ordenadores, medios electrÛnicos y redes de Internet. Debido a que la inform·tica se mueve m·s r·pido que la legislaciÛn, existen conductas criminales por vÌas inform·ticas que no pueden considerarse como delito, seg˙n la "TeorÌa del delito", por lo cual se definen como abusos inform·ticos, y parte de la criminalidad inform·tica y sobre todo cuando la viola un sistema.</p>
-			<p><em>Wikipedia</em></p>
-			<h3>DENUNCIA</h3>
-			<p>Documento en que se da noticia a la autoridad competente de la comisiÛn de un delito o de una falta.</p>
-			<p><em>Real Academia EspaÒola</em></p> 
-			<h3>ESTAFA</h3>
-			<p>Delito consistente en provocar un perjuicio patrimonial a alguien mediante engaÒo y con ·nimo de lucro.</p>
-			<p><em>Real Academia EspaÒola</em></p>  
-			<h3>FRAUDE</h3>
-			<p>AcciÛn contraria a la verdad y a la rectitud, que perjudica a la persona contra quien se comete.</p> 
-			<p>Acto tendente a eludir una disposiciÛn legal en perjuicio del Estado o de terceros.</p> 
-			Delito que comete el encargado de vigilar la ejecuciÛn de contratos p˙blicos, o de algunos privados, confabul·ndose con la representaciÛn de los intereses opuestos.</p> 
-			<p><em>Real Academia EspaÒola</em></p>  
-			<h3>GROOMING</h3>
-			<p>El grooming se define como el acoso o acercamiento a un menor ejercido por un adulto con fines sexuales. Concretamente, se refiere a acciones realizadas deliberadamente para establecer una relaciÛn y un control emocional sobre un niÒo o niÒa con el fin de preparar el terreno para el abuso sexual del menor, incluyÈndose en este desde el contacto fÌsico hasta las relaciones virtuales y la obtenciÛn de pornografÌa infantil.</p>
-			<p><em>Ley 26.904, Argentina</em></p> 
-			<h3>HACKING</h3>
-			<p>TÈcnicas y procedimientos utilizados por un hacker para cumplir un determinado objetivo. Suele asociarse esta palabra a procedimientos ilegales o malignos.</p>
-			<h3>IDENTIDAD</h3>
-			<p>Conjunto de rasgos propios de un individuo o de una colectividad que los caracterizan frente a los dem·s.</p> 
-			<p><em>Real Academia EspaÒola</em></p>  
-			<h3>INJURIA</h3>
-			<p>Agravio, ultraje de obra o de palabra.</p> 
-			<p>Hecho o dicho contra razÛn y justicia.</p> 
-			<p>Delito o falta consistente en la imputaciÛn a alguien de un hecho o cualidad en menoscabo de su fama o estimaciÛn.</p> 
-			<p><em>Real Academia EspaÒola</em></p>  
-			<h3>MALWARE</h3>
-			<p>Del inglÈs <em>malicious software</em>, tambiÈn llamado <em>badware</em>, cÛdigo maligno, software malicioso o software malintencionado, es un tipo de software que tiene como objetivo infiltrarse o daÒar una computadora o sistema de informaciÛn sin el consentimiento de su propietario. El tÈrmino virus inform·tico suele aplicarse de forma incorrecta para referirse a todos los tipos de malware, incluidos los virus verdaderos.</p> 
-			<h3>PAIDOFILIA</h3>
-			<p>AtracciÛn erÛtica o sexual que una persona adulta siente hacia niÒos o adolescentes.</p> 
-			<p><em>Real Academia EspaÒola</em></p> 
-			<h3>PEDERASTIA</h3>
-			<p>Abuso sexual cometido con niÒos.</p>
-			<p><em>Real Academia EspaÒola</em></p>  
-			<h3>PEDOFILIA</h3>
-			<p>AtracciÛn erÛtica o sexual que una persona adulta siente hacia niÒos o adolescentes.</p> 
-			<p><em>Real Academia EspaÒola</em></p> 
-			<h3>PHISHING</h3>
-			<p>DenominaciÛn que recibe la estafa cometida a travÈs de medios telem·ticos mediante la cual el estafador intenta conseguir, de usuarios legÌtimos, informaciÛn confidencial (contraseÒas, datos bancarios, etc) de forma fraudulenta.</p>
-			<p>El estafador o <em>phisher</em> suplanta la personalidad de una persona o empresa de confianza para que el receptor de una comunicaciÛn electrÛnica aparentemente oficial (vÌa e-mail, fax, sms o telefÛnicamente) crea en su veracidad y facilite, de este modo, los datos privados que resultan de interÈs para el estafador.</p> 
-			<h3>PORNOGRAFÕA</h3>
-			<p>Se refiere a todos aquellos materiales, im·genes o reproducciones que representan actos sexuales con el fin de provocar la excitaciÛn sexual del receptor.</p>
-			<h3>PORNOGRAFÕA INFANTIL</h3>
-			<p>Se entiende toda representaciÛn, por cualquier medio, de un niÒo dedicado a actividades sexuales explÌcitas, reales o simuladas, o toda representaciÛn de las partes genitales de un niÒo con fines primordialmente sexuales.</p>
-			<p><em>ConvenciÛn sobre los Derechos del NiÒo - ArtÌculo 2.</em></p>
-			<h3>ROBO DE IDENTIDAD</h3>
-			<p>Nombre que generalmente se brinda a la SuplantaciÛn de Identidad. Ocurre cuando una parte adquiere, transfiere, posee o utiliza informaciÛn personal de una persona fÌsica o jurÌdica de forma no autorizada, con la intenciÛn de cometer fraude u otros delitos relacionados.</p>
-			<h3>SPAM</h3>
-			<p>Correo no deseado recibido por el destinatario, procedente de un envÌo automatizado y masivo por parte del emisor. El <em>spam</em> generalmente se asocia al correo electrÛnico personal, pero no sÛlo afecta a los correos electrÛnicos personales, sino tambiÈn a foros, blogs y grupos de noticias.</p>
-			<h3>SUPLANTACI”N DE IDENTIDAD</h3>
-			<p>Ocurre cuando una parte adquiere, transfiere, posee o utiliza informaciÛn personal de una persona fÌsica o jurÌdica de forma no autorizada, con la intenciÛn de cometer fraude u otros delitos relacionados. TambiÈn es conocido como Robo de identidad.</p>
-		</div>
-	</div>
-	</div>
-                </section><footer class="text-center">
-				  <script type="text/javascript">
-					  $(document).ready(function(){$('.bxslider').bxSlider({
-					  auto: true,
-					  speed: 600,
-					  mode: 'horizontal',
-					  captions: false,
-					  pager: false,
-					  controls: false
-						});
-				});
-				</script><div class="footer-above">
-				  <div class="container">
-					<div class="row">
-					  <div class="footer-col col-md-4">
-						<h3>Sobre ODILA</h3>
-						<p>ODILA (Observatorio de Delitos Inform&aacute;ticos de Latinoam&eacute;rica) es un proyecto para construir un espacio de investigaci&oacute;n, sobre la realidad en materia de delitos inform&aacute;ticos y cibercrimen.</p>
-					  </div>
-					  <div class="footer-col col-md-4">
-						<h3>En la web</h3>
-						<ul class="list-inline">
-						  <li><a href="/#Contacto" class="btn-social btn-outline"><i class="fa fa-fw fa-envelope"></i></a></li>
-						  <li><a href="http://www.twitter.com/ODILatam" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a></li>
-						  <li><a href="https://www.facebook.com/ODILatam" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a></li>
-						</ul>
-					  </div>
-					  <div class="footer-col col-md-4">
-						<h3>Colaboran</h3>
-						  <ul class="bxslider">
-							<li><img src="/imgs/colaboran/asegurarte.png" title="AsegurarTe" /></li>
-							<li><img src="/imgs/colaboran/logo-segu-info.png" title="Segu.Info" /></li>
-							<li><img src="/imgs/colaboran/lambdasi.png" title="LambdaSI" /></li>
-						  </ul>
-					  </div>
-					</div>
-				  </div>
-				</div>
-				<div class="footer-below">
-				  <div class="container">
-					<div class="row">
-					  <div class="col-lg-12"> ODILA - Copyright &copy; 2014 | <a href="http://www.asegurarte.com.ar">AsegurarTE</a> - <a href="http://www.segu-info.com.ar">Segu-Info</a> | <a href="tos">TÈrminos y Condiciones</a> </div>
-					</div>
-				  </div>
-				</div>
-				</footer><div class="scroll-top page-scroll">
-                        <a class="btn btn-primary" href="#page-top">
-                            <i class="fa fa-home fa-fw"></i>
-                        </a>
-                    </div><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-55073911-1', 'auto');ga('send', 'pageview');</script></body></html>
+        <h3>AMENAZA</h3>
+        <p>Delito consistente en intimidar a alguien con el anuncio de la provocaci√≥n de un mal
+        grave para √©l o su familia.</p>
+        <p><em>Real Academia Espa√±ola</em></p>
+        <h3>CALUMNIA</h3>
+        <p>Acusaci√≥n falsa, hecha maliciosamente para causar da√±o. Imputaci√≥n de un delito hecha a
+        sabiendas de su falsedad.</p>
+        <p><em>Real Academia Espa√±ola</em></p>
+        <h3>CIBERCRIMEN</h3>
+        <p>Ver DELITO INFORM√ÅTICO</p>
+        <h3>CIBERDELITO O CIBERDELINCUENCIA</h3>
+        <p>Ver DELITO INFORM√ÅTICO</p>
+        <h3>CIFRA NEGRA</h3>
+        <p>La cifra negra es lo m√°s pr√≥ximo num√©ricamente a la cantidad real de cr√≠menes cometidos
+        en una sociedad determinada. La relaci√≥n de tensi√≥n existente entre delitos realmente
+        cometidos y los efectivamente tratados por el aparato penal, engloba a la mayor cantidad de
+        v√≠ctimas que ni siquiera ser√°n atendidas, tratadas ni conocidas por el segmento penal, y a
+        las cuales el Estado no da respuesta alguna. De acuerdo a Aller, tal proceso "empuja" a las
+        personas a no denunciar los actos il√≠citos, a no reconocerse a s√≠ mismas como v√≠ctimas y, en
+        consecuencia, a la impunidad que el infractor penal asume, puesto que en el acto desvalorado
+        no vislumbra un referente social acompasado del penal, en tanto a su conducta es delictiva,
+        pero el n√∫cleo social o persona menoscabada por el delito que se ha cometido no pone en
+        evidencia tal dan~o, y por ende, tampoco el segmento penal podr√° operar en su contra.</p>
+        <p><em>ALLER, Germ√°n. "Cuestiones Victimol√≥gicas de Actualidad: Origen de la Victimolog√≠a,
+          Seguridad, Cifra Negra, Personalizaci√≥n del Conflicto y Proceso Penal". Revista ILANUD
+          Nro. 27, 2006.</em></p>
+        <h3>CRACKING</h3>
+        <p>El cracking es una figura emparentada con el hacking, cuya conducta t√≠pica consiste en
+        acceder a sistemas inform√°ticos de forma no autorizada, del mismo modo que en el hacking, y
+        con una finalidad clara: menoscabar la integridad, disponibilidad y acceso a la informaci√≥n
+        disponible en dicho sitio Web o en el sistema inform√°tico.</p>
+        <p>El desarrollo de esta actividad implica que se est√° cometiendo un acto delictivo, por
+        estar viol√°ndose la intimidad del afectado, la confidencialidad de la informaci√≥n y
+        concretamente en el caso del cracking, por el hecho de haber causado da√±os, cambios y/o
+        destrucci√≥n de informaci√≥n as√≠ como haber inhabilitado soportes f√≠sicos tales como
+        servidores, discos duros, etc.</p>
+        <h3>DATO PERSONAL</h3>
+        <p>Informaci√≥n de cualquier tipo referida a personas f√≠sicas o de existencia ideal
+        determinadas o determinables.</p>
+        <p><em>Ley 25.326 (Datos Personales, Argentina).</em></p>
+        <h3>DELITO INFORM√ÅTICO</h3>
+        <p>Un delito inform√°tico, cibercrimen o ciberdelicuencia es toda aquella acc√≥n, t√≠pica,
+        antijur√≠dica y culpable, que se da por v√≠as inform√°ticas o que tiene como objetivo destruir
+        y da√±ar ordenadores, medios electr√≥nicos y redes de Internet. Debido a que la inform√°tica se
+        mueve m√°s r√°pido que la legislaci√≥n, existen conductas criminales por v√≠as inform√°ticas que
+        no pueden considerarse como delito, seg√∫n la "Teor√≠a del delito", por lo cual se definen
+        como abusos inform√°ticos, y parte de la criminalidad inform√°tica y sobre todo cuando la
+        viola un sistema.</p>
+        <p><em>Wikipedia</em></p>
+        <h3>DENUNCIA</h3>
+        <p>Documento en que se da noticia a la autoridad competente de la comisi√≥n de un delito o de
+        una falta.</p>
+        <p><em>Real Academia Espa√±ola</em></p>
+        <h3>ESTAFA</h3>
+        <p>Delito consistente en provocar un perjuicio patrimonial a alguien mediante enga√±o y con
+        √°nimo de lucro.</p>
+        <p><em>Real Academia Espa√±ola</em></p>
+        <h3>FRAUDE</h3>
+        <p>Acci√≥n contraria a la verdad y a la rectitud, que perjudica a la persona contra quien se comete.</p>
+        <p>Acto tendente a eludir una disposici√≥n legal en perjuicio del Estado o de terceros.</p>
+        Delito que comete el encargado de vigilar la ejecuci√≥n de contratos p√∫blicos, o de algunos
+        privados, confabul√°ndose con la representaci√≥n de los intereses opuestos.</p>
+        <p><em>Real Academia Espa√±ola</em></p>
+        <h3>GROOMING</h3>
+        <p>El grooming se define como el acoso o acercamiento a un menor ejercido por un adulto con
+        fines sexuales. Concretamente, se refiere a acciones realizadas deliberadamente para
+        establecer una relaci√≥n y un control emocional sobre un ni√±o o ni√±a con el fin de preparar
+        el terreno para el abuso sexual del menor, incluy√©ndose en este desde el contacto f√≠sico
+        hasta las relaciones virtuales y la obtenci√≥n de pornograf√≠a infantil.</p>
+        <p><em>Ley 26.904, Argentina</em></p>
+        <h3>HACKING</h3>
+        <p>T√©cnicas y procedimientos utilizados por un hacker para cumplir un determinado objetivo.
+        Suele asociarse esta palabra a procedimientos ilegales o malignos.</p>
+        <h3>IDENTIDAD</h3>
+        <p>Conjunto de rasgos propios de un individuo o de una colectividad que los caracterizan
+        frente a los dem√°s.</p>
+        <p><em>Real Academia Espa√±ola</em></p>
+        <h3>INJURIA</h3>
+        <p>Agravio, ultraje de obra o de palabra.</p>
+        <p>Hecho o dicho contra raz√≥n y justicia.</p>
+        <p>Delito o falta consistente en la imputaci√≥n a alguien de un hecho o cualidad en menoscabo
+        de su fama o estimaci√≥n.</p>
+        <p><em>Real Academia Espa√±ola</em></p>
+        <h3>MALWARE</h3>
+        <p>Del ingl√©s <em>malicious software</em>, tambi√©n llamado <em>badware</em>, c√≥digo maligno,
+        software malicioso o software malintencionado, es un tipo de software que tiene como
+        objetivo infiltrarse o da√±ar una computadora o sistema de informaci√≥n sin el consentimiento
+        de su propietario. El t√©rmino virus inform√°tico suele aplicarse de forma incorrecta para
+        referirse a todos los tipos de malware, incluidos los virus verdaderos.</p>
+        <h3>PAIDOFILIA</h3>
+        <p>Atracci√≥n er√≥tica o sexual que una persona adulta siente hacia ni√±os o adolescentes.</p>
+        <p><em>Real Academia Espa√±ola</em></p>
+        <h3>PEDERASTIA</h3>
+        <p>Abuso sexual cometido con ni√±os.</p>
+        <p><em>Real Academia Espa√±ola</em></p>
+        <h3>PEDOFILIA</h3>
+        <p>Atracci√≥n er√≥tica o sexual que una persona adulta siente hacia ni√±os o adolescentes.</p>
+        <p><em>Real Academia Espa√±ola</em></p>
+        <h3>PHISHING</h3>
+        <p>Denominaci√≥n que recibe la estafa cometida a trav√©s de medios telem√°ticos mediante la
+        cual el estafador intenta conseguir, de usuarios leg√≠timos, informaci√≥n confidencial
+        (contrase√±as, datos bancarios, etc) de forma fraudulenta.</p>
+        <p>El estafador o <em>phisher</em> suplanta la personalidad de una persona o empresa de
+        confianza para que el receptor de una comunicaci√≥n electr√≥nica aparentemente oficial (v√≠a
+        e-mail, fax, sms o telef√≥nicamente) crea en su veracidad y facilite, de este modo, los datos
+        privados que resultan de inter√©s para el estafador.</p>
+        <h3>PORNOGRAF√çA</h3>
+        <p>Se refiere a todos aquellos materiales, im√°genes o reproducciones que representan actos
+        sexuales con el fin de provocar la excitaci√≥n sexual del receptor.</p>
+        <h3>PORNOGRAF√çA INFANTIL</h3>
+        <p>Se entiende toda representaci√≥n, por cualquier medio, de un ni√±o dedicado a actividades
+        sexuales expl√≠citas, reales o simuladas, o toda representaci√≥n de las partes genitales de un
+        ni√±o con fines primordialmente sexuales.</p>
+        <p><em>Convenci√≥n sobre los Derechos del Ni√±o - Art√≠culo 2.</em></p>
+        <h3>ROBO DE IDENTIDAD</h3>
+        <p>Nombre que generalmente se brinda a la Suplantaci√≥n de Identidad. Ocurre cuando una parte
+        adquiere, transfiere, posee o utiliza informaci√≥n personal de una persona f√≠sica o jur√≠dica
+        de forma no autorizada, con la intenci√≥n de cometer fraude u otros delitos relacionados.</p>
+        <h3>SPAM</h3>
+        <p>Correo no deseado recibido por el destinatario, procedente de un env√≠o automatizado y
+        masivo por parte del emisor. El <em>spam</em> generalmente se asocia al correo electr√≥nico
+        personal, pero no s√≥lo afecta a los correos electr√≥nicos personales, sino tambi√©n a foros,
+        blogs y grupos de noticias.</p>
+        <h3>SUPLANTACI√ìN DE IDENTIDAD</h3>
+        <p>Ocurre cuando una parte adquiere, transfiere, posee o utiliza informaci√≥n personal de una
+        persona f√≠sica o jur√≠dica de forma no autorizada, con la intenci√≥n de cometer fraude u otros
+        delitos relacionados. Tambi√©n es conocido como Robo de identidad.</p>
+      </div>
+    </div>
+  </div>
+</section>

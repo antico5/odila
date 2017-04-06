@@ -1,208 +1,167 @@
-<!DOCTYPE html>
-                    <html lang="es">
-                        <head>
-                            <meta name="Copyright" content="Cristian Borghello, Marcelo Temperini, Maximiliano Macedo">
-                            <meta charset="utf-8">
-                            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                            <meta name="viewport" content="width=device-width, initial-scale=1">
-                            <meta name="description" content="ODILA - Observatorio de Delitos Inform·ticos de LatinoamÈrica">
-                            <meta name="keywords" content="denunciar delitos inform·ticos, denunciar delitos inform·ticos online, reportar delito informatico, cibercrimen, delitos informaticos, denunciar grooming, denunciar pornografÌa infantil, denunciar violaciÛn correo electrÛnico, denuncias inform·ticas, encuesta delitos informaticos, estafa inform·tica, fraude inform·tico, hacking, informar delito inform·tico, legislacion delitos informaticos, observatorio delitos inform·ticos, phishing, reportar delito informatico, suplantaciÛn identidad, violaciÛn datos personales">
-                            
-                            <title>ODILA - Denunciar Delitos Inform·ticos en LatinoamÈrica</title>
-                            
-                            <!-- Favicon -->
-                            <script type="text/javascript">
-//<![CDATA[
-try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"eac28b320a39aae89d47f69e2fd7ded1",petok:"008f88ceda8494fc1a84e83209907c0cc077a50a-1491317587-1800",zone:"odila.org",rocket:"0",apps:{"ga_key":{"ua":"UA-55073911-1","ga_bs":"2"}}}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=f2befc48d1/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
-//]]>
-</script>
-<link href="imgs/iconos/favicon.ico" rel="icon" type="image/x-icon">
-                            <link href="imgs/iconos/favicon.ico" rel="shortcut icon" type="image/x-icon">
-                            
-                            <!-- Bootstrap -->
-                            <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-                            <link href="includes/bootstrap/css/custom.css" rel="stylesheet">
-                            
-                            <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-                            <!--[if lt IE 9]>
-                                <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-                                <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
-                            <![endif]-->
-                            
-                            <!-- jQuery -->
-                            <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-                            <!-- Include all compiled plugins (below), or include individual files as needed -->
-                            <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-							<!-- Agrega Datepicker -->
-                            <script type="text/javascript" src="includes/modernizr/modernizr.custom.76434.js"></script>
-                            
-                            <!-- CSS Global -->
-                            <link href="includes/css/style.css" rel="stylesheet" type="text/css" title="estiloGlobal"/>
-                            
-                            <!-- Fonts -->
-							 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-							 
-                            <link href="includes/fonts/montserrat2.css" rel="stylesheet" type="text/css">
-
-                            <!-- Javascripts -->
-							<script type="text/javascript" src="includes/js/jquery.bxslider.js"></script>
-							<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-                            <script type="text/javascript" src="includes/js/classie.js"></script>
-                            <script type="text/javascript" src="includes/js/cbpAnimatedHeader.js"></script>
-                            <script type="text/javascript" src="includes/js/page-scroll.js"></script>
-                            <script type="text/javascript" src="includes/js/form.js"></script>
-							
-							<script>Modernizr.load({
-								test: Modernizr.inputtypes.date,
-								nope: ["//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js", "//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js", "//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css"],
-								complete: function () {
-									$("input[type=date]").datepicker({
-										dateFormat: "dd-mm-yy",
-										minDate: new Date(2010, 1-1, 1),
-										maxDate: "+0d"
-									}); 
-								}
-							});
-							</script>
-							
-                        <script type="text/javascript">
-/* <![CDATA[ */
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-55073911-1']);
-_gaq.push(['_trackPageview']);
-
-(function() {
-var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-
-(function(b){(function(a){"__CF"in b&&"DJS"in b.__CF?b.__CF.DJS.push(a):"addEventListener"in b?b.addEventListener("load",a,!1):b.attachEvent("onload",a)})(function(){"FB"in b&&"Event"in FB&&"subscribe"in FB.Event&&(FB.Event.subscribe("edge.create",function(a){_gaq.push(["_trackSocial","facebook","like",a])}),FB.Event.subscribe("edge.remove",function(a){_gaq.push(["_trackSocial","facebook","unlike",a])}),FB.Event.subscribe("message.send",function(a){_gaq.push(["_trackSocial","facebook","send",a])}));"twttr"in b&&"events"in twttr&&"bind"in twttr.events&&twttr.events.bind("tweet",function(a){if(a){var b;if(a.target&&a.target.nodeName=="IFRAME")a:{if(a=a.target.src){a=a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf("url")===0){b=unescape(c.split("=")[1]);break a}}b=void 0}_gaq.push(["_trackSocial","twitter","tweet",b])}})})})(window);
-/* ]]> */
-</script>
-</head><body id="page-top" class="index"><nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-                    <div class="container">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header  page-scroll">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button><a class="navbar-brand" href="/"><img src="/imgs/logos/logo-odila.png" alt="ODILA - Denunciar Delitos Inform·ticos en LatinoamÈrica"></a></div>
-			<!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						
-                            <ul class="nav navbar-nav navbar-right">
-                                <li class="page-scroll"><a href="http://odila.org/#Quienes">Quienes Somos</a></li><li class="page-scroll"><a href="http://odila.org/#Denuncia">Denunciar</a></li><li class="page-scroll"><a href="glosario">Glosario</a></li><li class="page-scroll"><a href="difusion">DifusiÛn</a></li><li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reportes <b class="caret"></b></a>
-                            <ul class="dropdown-menu"><li class="page-scroll"><a href="http://odila.org/reporte-2015">Reporte 2015</a></li><li class="page-scroll"><a href="http://odila.org/reporte">Reporte 2016</a></li></ul>
-                        </li><li class="page-scroll"><a href="http://odila.org/#Contacto">Contacto</a></li>
-                            </ul>       </div><!-- /.navbar-collapse -->
-                    </div><!-- /.container-fluid -->
-                </nav><section id="tos"  class="success" >
-                    <div class="container">
+<section id="tos"  class="success" >
+  <div class="container">
     <div class="row principal">
       <div class="col-lg-12 text-center">
-        <h2>TÈrminos y condiciones</h2>
+        <h2>T√©rminos y condiciones</h2>
       </div>
     </div>
     <div class="row principal">
       <div class="col-lg-8 col-lg-offset-2">
-        <h3>RelaciÛn jurÌdica</h3>
+        <h3>Relaci√≥n jur√≠dica</h3>
         <ol>
-          <li>El acceso a y/o uso del sitio <a href="http://www.odila.org/">ODILA</a>, en adelante denominado "Proyecto ODILA", requiere que todos los visitantes al mismo se adhieran a los TÈrminos y Condiciones, acept·ndolos plenamente y sin reserva alguna, asÌ como en su caso, las Condiciones Particulares que en el futuro puedan complementarlas, sustituirlas o modificarlas en alg˙n sentido en relaciÛn con los servicios y contenidos del Proyecto ODILA.</li>
-          <li> Por el solo hecho de ingresar y hacer uso del Proyecto ODILA, usted (el "Usuario") se adhiere en forma inmediata a todos y cada uno de los siguientes TÈrminos y Condiciones. En consecuencia, el Usuario deber· leer detenidamente los TÈrminos y Condiciones asÌ como las Condiciones Particulares, que pudieran dictarse, antes de acceder y/o utilizar cualquier servicio de la Red bajo su entera responsabilidad.
+          <li>El acceso a y/o uso del sitio <a href="http://www.odila.org/">ODILA</a>, en adelante
+            denominado "Proyecto ODILA", requiere que todos los visitantes al mismo se adhieran a
+            los T√©rminos y Condiciones, acept√°ndolos plenamente y sin reserva alguna, as√≠ como en su
+          caso, las Condiciones Particulares que en el futuro puedan complementarlas, sustituirlas o
+          modificarlas en alg√∫n sentido en relaci√≥n con los servicios y contenidos del Proyecto
+        ODILA.</li>
+          <li> Por el solo hecho de ingresar y hacer uso del Proyecto ODILA, usted (el "Usuario") se
+            adhiere en forma inmediata a todos y cada uno de los siguientes T√©rminos y Condiciones.
+            En consecuencia, el Usuario deber√° leer detenidamente los T√©rminos y Condiciones as√≠
+            como las Condiciones Particulares, que pudieran dictarse, antes de acceder y/o utilizar
+            cualquier servicio de la Red bajo su entera responsabilidad.
         </ol>
-        <h3>LegislaciÛn aplicable</h3>
+        <h3>Legislaci√≥n aplicable</h3>
         <ol>
-          <li>El ingreso y utilizaciÛn del Proyecto ODILAo se encuentra sujeto a las disposiciones aplicables de la legislaciÛn Argentina. Usted acepta someterse a la jurisdicciÛn exclusiva para resolver cualquier asunto legal derivado de estos TÈrminos y Condiciones.
+          <li>El ingreso y utilizaci√≥n del Proyecto ODILAo se encuentra sujeto a las disposiciones
+            aplicables de la legislaci√≥n Argentina. Usted acepta someterse a la jurisdicci√≥n
+            exclusiva para resolver cualquier asunto legal derivado de estos T√©rminos y Condiciones.
         </ol>
-        <h3>Uso del Sitio y LimitaciÛn de Responsabilidades</h3>
+        <h3>Uso del Sitio y Limitaci√≥n de Responsabilidades</h3>
         <ol>
-          <li>El Usuario se compromete a hacer uso del Proyecto ODILA y sus servicios y contenidos sin contravenir la legislaciÛn aplicable, la buena fe y el orden p˙blico. En consecuencia, queda prohibido todo uso con fines ilÌcitos o que perjudiquen o impidan, puedan daÒar y/o sobrecargar, de cualquier forma, la utilizaciÛn y normal funcionamiento del sitio, que directa o indirectamente atenten contra el mismo o contra cualquier derecho de un tercero.</li>
-          <li>La informaciÛn proporcionada por el Proyecto ODILA es provista para el Usuario "en la forma que se encuentra", de forma que los propietarios y/o administradores de la Red no garantizan la exactitud, precisiÛn o conveniencia de tal informaciÛn.</li>
-          <li>El Proyecto ODILA no garantiza la exactitud de los resultados en relaciÛn a sobre si el hecho efectivamente puede ser considerado un delito penal en el paÌs indicado por el Usuario. Usted acepta la exenciÛn de responsabilidad por parte de los propietarios y/o administradores sobre la veracidad, precisiÛn o exactitud de toda aquella informaciÛn suministrada por el Proyecto ODILA.</li>
-          <li>El Proyecto ODILA no brinda asesoramiento al Usuario, sino que solamente pretende alcanzar una finalidad de concientizaciÛn acerca de la importancia de dar conocer la problem·tica, y sobre todo, fomentar la realizaciÛn de denuncias que permita un combate eficaz frente al problema de la cifra negra.y difusiÛn sobre la problem·tica de la cifra negra de los delitos inform·ticos. En todos los casos, se recomienda la consulta por parte del Usuario a un profesional especializado en la materia a fin de recibir el adecuado asesoramiento que merece el caso.</li>
-          <li>Los datos recolectados, y de acuerdo al caudal de datos que puedan ser incorporados a travÈs del Proyecto ODILA, ser·n publicados en informes anuales.</li>
-          <li>El Proyecto ODILA no asume responsabilidad alguna por cualquier perjuicio, costo, daÒo o pÈrdida de ninguna naturaleza originado como consecuencia de la falta de utilidad, adecuaciÛn y/o validez del contenido del sitio para satisfacer necesidades, actividades y/o resultados concretos y/o expectativas de los Usuarios.</li>
-          <li>La Red, no asume ning˙n tipo de responsabilidad que se derive de cualquier daÒo y/o perjuicio de cualquier naturaleza que se pudieran originar al Usuario como consecuencia o de cualquier forma relacionado con:
+          <li>El Usuario se compromete a hacer uso del Proyecto ODILA y sus servicios y contenidos
+            sin contravenir la legislaci√≥n aplicable, la buena fe y el orden p√∫blico. En
+            consecuencia, queda prohibido todo uso con fines il√≠citos o que perjudiquen o impidan,
+            puedan da√±ar y/o sobrecargar, de cualquier forma, la utilizaci√≥n y normal funcionamiento
+            del sitio, que directa o indirectamente atenten contra el mismo o contra cualquier derecho
+            de un tercero.</li>
+          <li>La informaci√≥n proporcionada por el Proyecto ODILA es provista para el Usuario "en la
+            forma que se encuentra", de forma que los propietarios y/o administradores de la Red no
+            garantizan la exactitud, precisi√≥n o conveniencia de tal informaci√≥n.</li>
+          <li>El Proyecto ODILA no garantiza la exactitud de los resultados en relaci√≥n a sobre si
+            el hecho efectivamente puede ser considerado un delito penal en el pa√≠s indicado por el
+            Usuario. Usted acepta la exenci√≥n de responsabilidad por parte de los propietarios y/o
+            administradores sobre la veracidad, precisi√≥n o exactitud de toda aquella informaci√≥n
+            suministrada por el Proyecto ODILA.</li>
+          <li>El Proyecto ODILA no brinda asesoramiento al Usuario, sino que solamente pretende
+            alcanzar una finalidad de concientizaci√≥n acerca de la importancia de dar conocer la
+            problem√°tica, y sobre todo, fomentar la realizaci√≥n de denuncias que permita un combate
+            eficaz frente al problema de la cifra negra.y difusi√≥n sobre la problem√°tica de la cifra
+            negra de los delitos inform√°ticos. En todos los casos, se recomienda la consulta por parte
+            del Usuario a un profesional especializado en la materia a fin de recibir el adecuado
+            asesoramiento que merece el caso.</li>
+          <li>Los datos recolectados, y de acuerdo al caudal de datos que puedan ser incorporados a
+            trav√©s del Proyecto ODILA, ser√°n publicados en informes anuales.</li>
+          <li>El Proyecto ODILA no asume responsabilidad alguna por cualquier perjuicio, costo, da√±o
+            o p√©rdida de ninguna naturaleza originado como consecuencia de la falta de utilidad,
+            adecuaci√≥n y/o validez del contenido del sitio para satisfacer necesidades, actividades
+            y/o resultados concretos y/o expectativas de los Usuarios.</li>
+          <li>
+            La Red, no asume ning√∫n tipo de responsabilidad que se derive de cualquier da√±o y/o
+            perjuicio de cualquier naturaleza que se pudieran originar al Usuario como consecuencia
+            o de cualquier forma relacionado con:
             <ul>
-              <li>El acceso o utilizaciÛn del sitio, incluyendo la responsabilidad relacionada con daÒos ocasionados por virus, programas maliciosos o lesivos en los contenidos y/o cualquier otro agente que pueda llegar a infectar o afectar de cualquier modo el/los sistema de computaciÛn utilizado por el Usuario.</li>
-              <li>La falta de licitud, calidad, veracidad, utilidad y disponibilidad de los servicios prestados por terceros y puestos a disposiciÛn de los usuarios del sitio.</li>
-              <li>La falta de disponibilidad, continuidad, acceso, mantenimiento y efectivo funcionamiento del Proyecto ODILA y/o de sus servicios y/o actualizaciÛn, exactitud, exhaustividad, pertinencia, actualidad y fiabilidad de sus contenidos, cualquiera sea la causa, y las dificultades o problemas tÈcnicos o de otra naturaleza en los que tengan su origen dichos hechos.</li>
-              <li>La recepciÛn, obtenciÛn, almacenamiento, difusiÛn y/o transmisiÛn, por parte de los Usuarios, de los contenidos del sitio.</li>
+              <li>El acceso o utilizaci√≥n del sitio, incluyendo la responsabilidad relacionada con
+                da√±os ocasionados por virus, programas maliciosos o lesivos en los contenidos y/o
+                cualquier otro agente que pueda llegar a infectar o afectar de cualquier modo el/los
+                sistema de computaci√≥n utilizado por el Usuario.</li>
+              <li>La falta de licitud, calidad, veracidad, utilidad y disponibilidad de los
+                servicios prestados por terceros y puestos a disposici√≥n de los usuarios del
+                sitio.</li>
+              <li>La falta de disponibilidad, continuidad, acceso, mantenimiento y efectivo
+                funcionamiento del Proyecto ODILA y/o de sus servicios y/o actualizaci√≥n, exactitud,
+                exhaustividad, pertinencia, actualidad y fiabilidad de sus contenidos, cualquiera
+                sea la causa, y las dificultades o problemas t√©cnicos o de otra naturaleza en los que
+                tengan su origen dichos hechos.</li>
+              <li>La recepci√≥n, obtenci√≥n, almacenamiento, difusi√≥n y/o transmisi√≥n, por parte de
+                los Usuarios, de los contenidos del sitio.</li>
             </ul>
-          <li>El Proyecto ODILA incluye dentro de sus contenidos enlaces con sitios pertenecientes y/o gestionados por terceros con el objeto de facilitar el acceso a informaciÛn disponible a travÈs de Internet. El Proyecto ODILA no asume ninguna responsabilidad derivada de la existencia de enlaces entre los contenidos de este sitio y contenidos situados fuera del mismo o de cualquier otra menciÛn de contenidos externos a este sitio. Tales enlaces o menciones tienen una finalidad exclusivamente informativa y, en ning˙n caso, implican el apoyo, aprobaciÛn, comercializaciÛn o relaciÛn alguna entre el Proyecto ODILA y las personas o entidades autoras y/o gestoras de tales contenidos o titulares de los sitios donde se encuentren. En este sentido el Usuario se obliga a poner la m·xima diligencia y prudencia en el caso de acceder o usar contenidos o servicios de los sitios a los que acceda en virtud de los mencionados enlaces. La enumeraciÛn anterior tiene mero car·cter enunciativo y, en ning˙n caso, exclusivo ni excluyente en ninguno de sus puntos. En todos los supuestos, el Proyecto ODILA renuncia a toda responsabilidad por los daÒos y perjuicios de cualquier naturaleza derivados directa o indirectamente de los mismos y de cualquier otro caso no especificado de an·logas caracterÌsticas.</li>
+            <li>El Proyecto ODILA incluye dentro de sus contenidos enlaces con sitios pertenecientes
+              y/o gestionados por terceros con el objeto de facilitar el acceso a informaci√≥n
+              disponible a trav√©s de Internet. El Proyecto ODILA no asume ninguna responsabilidad
+              derivada de la existencia de enlaces entre los contenidos de este sitio y contenidos
+              situados fuera del mismo o de cualquier otra menci√≥n de contenidos externos a este sitio.
+              Tales enlaces o menciones tienen una finalidad exclusivamente informativa y, en ning√∫n caso,
+              implican el apoyo, aprobaci√≥n, comercializaci√≥n o relaci√≥n alguna entre el Proyecto ODILA y
+              las personas o entidades autoras y/o gestoras de tales contenidos o titulares de los sitios
+              donde se encuentren. En este sentido el Usuario se obliga a poner la m√°xima diligencia y
+              prudencia en el caso de acceder o usar contenidos o servicios de los sitios a los que acceda en
+              virtud de los mencionados enlaces. La enumeraci√≥n anterior tiene mero car√°cter enunciativo y, en
+              ning√∫n caso, exclusivo ni excluyente en ninguno de sus puntos. En todos los supuestos,
+              el Proyecto
+              ODILA renuncia a toda responsabilidad por los da√±os y perjuicios de cualquier
+              naturaleza derivados
+              directa o indirectamente de los mismos y de cualquier otro caso no especificado de an√°logas
+              caracter√≠sticas.</li>
         </ol>
         <h3>Contenidos</h3>
         <ol>
-          <li>Todos los contenidos del Proyecto ODILA, est·n bajo Licencia AtribuciÛn-No Comercial-Compartir Obras Derivadas Igual 2.5 Argentina de Creative Commons. Como excepciÛn, algunos contenidos pueden estar bajo licencias diferentes, lo cu·l ser· notificado e informado al usuario en el propio contenido.</li>
-          <li>Usted conservar· los derechos de autor y cualquier otro derecho que ya posea del Contenido que envÌe, publique o muestre en el Sitio. Al enviar, publicar o mostrar Contenido, estar· concediendo al Proyecto ODILA una licencia temporal, internacional, revocable, no exclusiva y que no est· sujeta a derechos de autor para reproducir, adaptar, modificar, traducir, publicar, representar y mostrar p˙blicamente, asÌ como para distribuir cualquier Contenido que envÌe, publique o muestre en el sitio. Esta licencia se otorga con el ˙nico propÛsito de permitir al Proyecto ODILA, publicar y distribuir su servicio. En cualquier momento el Usuario puede revocar la licencia concedida, comunicando a los propietarios y/o administradores del Sitio.
-            Datos Personales</li>
-          <li>El Proyecto ODILA le informa a los usuarios del Sitio, acerca de sus polÌticas de protecciÛn de datos de car·cter personal (En adelante "Datos Personales"), brindando informaciÛn clara y precisa para que los usuarios determinen libre y voluntariamente su consentimiento para facilitar los Datos Personales requeridos por el Sitio.</li>
-          <li>Los datos personales ser·n objeto de tratamiento automatizado e incorporados a los correspondientes registros de datos de car·cter personal del cu·l el titular y responsable es el Abog. Marcelo Temperini. Dicho registro, est· debidamente inscripto ante la DirecciÛn Nacional de ProtecciÛn de Datos Personales, en cumplimiento y observaciÛn de la Ley N∫ 25.326 y sus reglamentaciones.</li>
-          <li>En cumplimiento con el art. 6 de la Ley N∫ 25.326, se le informa a usted que la recolecciÛn y tratamiento de sus datos personales tiene como ˙nica finalidad el contacto por el Proyecto ODILA a fin de enviarle el reporte autom·ticamente generado, o bien, a fin de responder a la consulta realizada a travÈs del formulario de Contacto del Proyecto ODILA. Se recuerda que en el primero de los casos, sobre la utilizaciÛn del sistema de reportes de delitos inform·ticos, el mismo puede ser utilizado de forma anÛnima, sin necesidad de brindar ning˙n dato personal.</li>
-          <li>Usted acepta que los datos brindados a travÈs del formulario de reporte ser·n utilizados para elaborar estadÌsticas generales, sin identificar al usuario preservando su anonimato, utilizando tratamientos para disociaciÛn de datos, de acuerdo a los est·ndares de seguridad fijados por la DirecciÛn Nacional de ProtecciÛn de Datos Personales.</li>
-          <li> se compromete a que toda la informaciÛn que facilite deber· ser veraz, clara y actualizada. A estos efectos, usted garantiza la autenticidad de todos aquellos datos que ingrese al sistema.</li>
-          <li>Usted tiene la facultad de ejercer el derecho de acceso a sus datos personales en forma gratuita en intervalos no inferiores a seis meses, salvo que se acredite un interÈs legÌtimo al efecto conforme lo establecido en el art. 14, inciso 3 de la Ley N∫ 25.326. La DirecciÛn Nacional de ProtecciÛn de Datos Personales, tiene la atribuciÛn de atender las denuncias y reclamos que se interpongan con relaciÛn al incumplimiento de las normas sobre protecciÛn de los datos personales.</li>
-          <li>Usted podr· en cualquier momento solicitar el retiro o bloqueo de su nombre de los bancos de datos a los que se refiere el presente artÌculo. Para hacer ejercicio de sus derechos tenga a bien comunicarse a <a href="javascript:location='mailto:\u006f\u0064\u0069\u006c\u0061\u0040\u006f\u0064\u0069\u006c\u0061\u002e\u006f\u0072\u0067';void 0">este correo electrÛnico</a>.</li><li>La DIRECCION NACIONAL DE PROTECCION DE DATOS PERSONALES, ”rgano de Control de la Ley N∫ 25.326, tiene la atribuciÛn de atender las denuncias y reclamos que se interpongan con relaciÛn al incumplimiento de las normas sobre protecciÛn de datos personales.
+          <li>Todos los contenidos del Proyecto ODILA, est√°n bajo Licencia Atribuci√≥n-No
+            Comercial-Compartir Obras Derivadas Igual 2.5 Argentina de Creative Commons. Como
+            excepci√≥n, algunos contenidos pueden estar bajo licencias diferentes, lo cu√°l ser√°
+            notificado e informado al usuario en el propio contenido.</li>
+          <li>Usted conservar√° los derechos de autor y cualquier otro derecho que ya posea del
+            Contenido que env√≠e, publique o muestre en el Sitio. Al enviar, publicar o mostrar
+            Contenido, estar√° concediendo al Proyecto ODILA una licencia temporal, internacional,
+            revocable, no exclusiva y que no est√° sujeta a derechos de autor para reproducir,
+            adaptar, modificar, traducir, publicar, representar y mostrar p√∫blicamente, as√≠ como
+            para distribuir cualquier Contenido que env√≠e, publique o muestre en el sitio. Esta
+            licencia se otorga con el √∫nico prop√≥sito de permitir al Proyecto ODILA, publicar y
+            distribuir su servicio. En cualquier momento el Usuario puede revocar la licencia
+            concedida, comunicando a los propietarios y/o administradores del Sitio.
+            Datos Personales
+          </li>
+          <li>El Proyecto ODILA le informa a los usuarios del Sitio, acerca de sus pol√≠ticas de
+            protecci√≥n de datos de car√°cter personal (En adelante "Datos Personales"), brindando
+            informaci√≥n clara y precisa para que los usuarios determinen libre y voluntariamente su
+            consentimiento para facilitar los Datos Personales requeridos por el Sitio.</li>
+          <li>Los datos personales ser√°n objeto de tratamiento automatizado e incorporados a los
+            correspondientes registros de datos de car√°cter personal del cu√°l el titular y
+            responsable es el Abog. Marcelo Temperini. Dicho registro, est√° debidamente inscripto
+            ante la Direcci√≥n Nacional de Protecci√≥n de Datos Personales, en cumplimiento y
+            observaci√≥n de la Ley N¬∫ 25.326 y sus reglamentaciones.</li>
+          <li>En cumplimiento con el art. 6 de la Ley N¬∫ 25.326, se le informa a usted que la
+            recolecci√≥n y tratamiento de sus datos personales tiene como √∫nica finalidad el contacto
+            por el Proyecto ODILA a fin de enviarle el reporte autom√°ticamente generado, o bien, a
+            fin de responder a la consulta realizada a trav√©s del formulario de Contacto del Proyecto
+            ODILA. Se recuerda que en el primero de los casos, sobre la utilizaci√≥n del sistema de
+            reportes de delitos inform√°ticos, el mismo puede ser utilizado de forma an√≥nima, sin
+            necesidad de brindar ning√∫n dato personal.</li>
+          <li>Usted acepta que los datos brindados a trav√©s del formulario de reporte ser√°n
+            utilizados para elaborar estad√≠sticas generales, sin identificar al usuario preservando
+            su anonimato, utilizando tratamientos para disociaci√≥n de datos, de acuerdo a los
+            est√°ndares de seguridad fijados por la Direcci√≥n Nacional de Protecci√≥n de Datos
+            Personales.</li>
+          <li> se compromete a que toda la informaci√≥n que facilite deber√° ser veraz, clara y
+            actualizada. A estos efectos, usted garantiza la autenticidad de todos aquellos datos
+            que ingrese al sistema.</li>
+          <li>Usted tiene la facultad de ejercer el derecho de acceso a sus datos personales en
+            forma gratuita en intervalos no inferiores a seis meses, salvo que se acredite un
+            inter√©s leg√≠timo al efecto conforme lo establecido en el art. 14, inciso 3 de la Ley N¬∫
+            25.326. La Direcci√≥n Nacional de Protecci√≥n de Datos Personales, tiene la atribuci√≥n de
+            atender las denuncias y reclamos que se interpongan con relaci√≥n al incumplimiento de las
+            normas sobre protecci√≥n de los datos personales.</li>
+          <li>Usted podr√° en cualquier momento solicitar el retiro o bloqueo de su nombre de los
+            bancos de datos a los que se refiere el presente art√≠culo. Para hacer ejercicio de sus
+            derechos tenga a bien comunicarse a <a
+                                               href="javascript:location='mailto:\u006f\u0064\u0069\u006c\u0061\u0040\u006f\u0064\u0069\u006c\u0061\u002e\u006f\u0072\u0067';void
+                                               0">este correo electr√≥nico</a>.</li>
+          <li>La DIRECCION NACIONAL DE PROTECCION DE DATOS PERSONALES, √ìrgano de Control de la Ley
+            N¬∫ 25.326, tiene la atribuci√≥n de atender las denuncias y reclamos que se interpongan
+            con relaci√≥n al incumplimiento de las normas sobre protecci√≥n de datos personales.
         </ol>
         <h3>Generales</h3>
         <ol>
-          <li>Los presentes TÈrminos y Condiciones constituyen el entero acuerdo entre las partes y derogan cualquier acuerdo anterior entre las partes en esta materia. La declaraciÛn de que alguna de las disposiciones de estos TÈrminos y Condiciones fuese inv·lida o no ejecutable, no tendr· efecto alguno respecto de las dem·s provisiones de estos TÈrminos y Condiciones, las cuales permanecer·n con total efecto y vigencia.</li>
-          <li>El Proyecto ODILA se reserva el derecho de, en cualquier momento y sin necesidad de previo aviso, modificar o eliminar el contenido, estructura, diseÒo, servicios y condiciones de acceso y/o uso de este sitio.</li>
+          <li>Los presentes T√©rminos y Condiciones constituyen el entero acuerdo entre las partes y
+            derogan cualquier acuerdo anterior entre las partes en esta materia. La declaraci√≥n de
+            que alguna de las disposiciones de estos T√©rminos y Condiciones fuese inv√°lida o no
+          ejecutable, no tendr√° efecto alguno respecto de las dem√°s provisiones de estos T√©rminos y
+          Condiciones, las cuales permanecer√°n con total efecto y vigencia.</li>
+          <li>El Proyecto ODILA se reserva el derecho de, en cualquier momento y sin necesidad de
+            previo aviso, modificar o eliminar el contenido, estructura, dise√±o, servicios y
+            condiciones de acceso y/o uso de este sitio.</li>
         </ol>
       </div>
     </div>
   </div>
-                </section><footer class="text-center">
-				  <script type="text/javascript">
-					  $(document).ready(function(){$('.bxslider').bxSlider({
-					  auto: true,
-					  speed: 600,
-					  mode: 'horizontal',
-					  captions: false,
-					  pager: false,
-					  controls: false
-						});
-				});
-				</script><div class="footer-above">
-				  <div class="container">
-					<div class="row">
-					  <div class="footer-col col-md-4">
-						<h3>Sobre ODILA</h3>
-						<p>ODILA (Observatorio de Delitos Inform&aacute;ticos de Latinoam&eacute;rica) es un proyecto para construir un espacio de investigaci&oacute;n, sobre la realidad en materia de delitos inform&aacute;ticos y cibercrimen.</p>
-					  </div>
-					  <div class="footer-col col-md-4">
-						<h3>En la web</h3>
-						<ul class="list-inline">
-						  <li><a href="/#Contacto" class="btn-social btn-outline"><i class="fa fa-fw fa-envelope"></i></a></li>
-						  <li><a href="http://www.twitter.com/ODILatam" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a></li>
-						  <li><a href="https://www.facebook.com/ODILatam" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a></li>
-						</ul>
-					  </div>
-					  <div class="footer-col col-md-4">
-						<h3>Colaboran</h3>
-						  <ul class="bxslider">
-							<li><img src="/imgs/colaboran/asegurarte.png" title="AsegurarTe" /></li>
-							<li><img src="/imgs/colaboran/logo-segu-info.png" title="Segu.Info" /></li>
-							<li><img src="/imgs/colaboran/lambdasi.png" title="LambdaSI" /></li>
-						  </ul>
-					  </div>
-					</div>
-				  </div>
-				</div>
-				<div class="footer-below">
-				  <div class="container">
-					<div class="row">
-					  <div class="col-lg-12"> ODILA - Copyright &copy; 2014 | <a href="http://www.asegurarte.com.ar">AsegurarTE</a> - <a href="http://www.segu-info.com.ar">Segu-Info</a> | <a href="tos">TÈrminos y Condiciones</a> </div>
-					</div>
-				  </div>
-				</div>
-				</footer><div class="scroll-top page-scroll">
-                        <a class="btn btn-primary" href="#page-top">
-                            <i class="fa fa-home fa-fw"></i>
-                        </a>
-                    </div><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-55073911-1', 'auto');ga('send', 'pageview');</script></body></html>
+</section>
