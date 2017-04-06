@@ -55,14 +55,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#page-top">
+          <%= link_to root_path(anchor: 'page-top'), class: 'navbar-brand' do %>
             <%= image_tag 'logo-odila.png' %>
-          </a>
+          <% end %>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li class="page-scroll"> <a href="#Quienes">Quienes Somos</a></li>
-            <li class="page-scroll"><a href="#Denuncia">Denunciar</a></li>
+            <li class="page-scroll"><%= link_to 'Quienes Somos', root_path(anchor: 'Quienes') %></li>
+            <li class="page-scroll"><%= link_to 'Denunciar', root_path(anchor: 'Denuncia') %></li>
             <li class="page-scroll"><%= link_to 'Glosario', glosario_path %></li>
             <li class="page-scroll"><%= link_to 'Difusión', difusion_path %></li>
             <li class="dropdown">
@@ -72,7 +72,7 @@
                 <li class="page-scroll"><a href="http://odila.org/reporte">Reporte 2016</a></li>
               </ul>
             </li>
-            <li class="page-scroll"><a href="#Contacto">Contacto</a></li>
+            <li class="page-scroll"><%= link_to 'Contacto', root_path(anchor: 'Contacto') %></li>
           </ul>
         </div>
       </div>
