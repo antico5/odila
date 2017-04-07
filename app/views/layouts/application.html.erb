@@ -68,8 +68,8 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reportes <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li class="page-scroll"><a href="http://odila.org/reporte-2015">Reporte 2015</a></li>
-                <li class="page-scroll"><a href="http://odila.org/reporte">Reporte 2016</a></li>
+                <li class="page-scroll"><%= link_to 'Reporte 2015', reporte_2015_path %></li>
+                <li class="page-scroll"><%= link_to 'Reporte 2015', reporte_path %></li>
               </ul>
             </li>
             <li class="page-scroll"><%= link_to 'Contacto', root_path(anchor: 'Contacto') %></li>
@@ -166,8 +166,7 @@
         <i class="fa fa-home fa-fw"></i>
       </a>
     </div>
-    <div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content
-    ui-helper-clearfix ui-corner-all">
+    <div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
     </div>
   </body>
 </html>
