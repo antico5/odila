@@ -10,10 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170407162857) do
+ActiveRecord::Schema.define(version: 20170407164355) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "centro_de_denuncias", force: :cascade do |t|
+    t.string   "direccion"
+    t.string   "ciudad"
+    t.integer  "pais_id"
+    t.text     "telefonos"
+    t.string   "email"
+    t.string   "website"
+    t.text     "fiscales"
+    t.string   "twitter"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["pais_id"], name: "index_centro_de_denuncias_on_pais_id", using: :btree
+  end
 
   create_table "denuncias", force: :cascade do |t|
     t.date     "fecha"
@@ -37,4 +51,5 @@ ActiveRecord::Schema.define(version: 20170407162857) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "centro_de_denuncias", "paises"
 end
