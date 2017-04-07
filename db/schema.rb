@@ -10,9 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20170407162857) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "denuncias", force: :cascade do |t|
+    t.date     "fecha"
+    t.integer  "tipo_persona"
+    t.integer  "delito_id"
+    t.integer  "pais_id"
+    t.integer  "accion_tomada"
+    t.integer  "razon_no_denunciar"
+    t.integer  "rango_edad"
+    t.integer  "genero"
+    t.integer  "educacion"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.index ["delito_id"], name: "index_denuncias_on_delito_id", using: :btree
+    t.index ["pais_id"], name: "index_denuncias_on_pais_id", using: :btree
+  end
+
+  create_table "paises", force: :cascade do |t|
+    t.string   "nombre"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end
