@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170407164524) do
+ActiveRecord::Schema.define(version: 20170407164724) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -52,6 +52,18 @@ ActiveRecord::Schema.define(version: 20170407164524) do
     t.index ["pais_id"], name: "index_denuncias_on_pais_id", using: :btree
   end
 
+  create_table "legislaciones", force: :cascade do |t|
+    t.integer  "pais_id"
+    t.integer  "delito_id"
+    t.string   "numero_ley"
+    t.string   "articulo"
+    t.text     "texto"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["delito_id"], name: "index_legislaciones_on_delito_id", using: :btree
+    t.index ["pais_id"], name: "index_legislaciones_on_pais_id", using: :btree
+  end
+
   create_table "paises", force: :cascade do |t|
     t.string   "nombre"
     t.datetime "created_at", null: false
@@ -59,4 +71,6 @@ ActiveRecord::Schema.define(version: 20170407164524) do
   end
 
   add_foreign_key "centro_de_denuncias", "paises"
+  add_foreign_key "legislaciones", "delitos"
+  add_foreign_key "legislaciones", "paises"
 end
