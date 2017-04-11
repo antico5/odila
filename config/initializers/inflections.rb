@@ -12,6 +12,7 @@ ActiveSupport::Inflector.inflections(:en) do |inflect|
   inflect.irregular 'delito', 'delitos'
   inflect.irregular 'legislacion', 'legislaciones'
   inflect.irregular 'edad', 'edades'
+  inflect.irregular 'instruccion', 'instrucciones'
 end
 
 # These inflection rules are supported but not enabled by default:

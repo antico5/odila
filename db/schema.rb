@@ -10,10 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170411140940) do
+ActiveRecord::Schema.define(version: 20170411141753) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "accion_tomadas", force: :cascade do |t|
+    t.string   "nombre"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "causas", force: :cascade do |t|
     t.string   "causa"
@@ -59,6 +65,12 @@ ActiveRecord::Schema.define(version: 20170411140940) do
   end
 
   create_table "generos", force: :cascade do |t|
+    t.string   "nombre"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "instrucciones", force: :cascade do |t|
     t.string   "nombre"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

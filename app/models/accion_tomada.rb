@@ -1,0 +1,2 @@
+class AccionTomada < ApplicationRecord
+end
