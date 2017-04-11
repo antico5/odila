@@ -1,0 +1,13 @@
+delito:
+  - nombre: "Hacking: alguien accedió sin mi consentimiento a mis cuentas o sistemas"
+  - nombre: "Cracking: alguien ha modificado, alterado o eliminado todo o parte de mis datos o sistemas informáticos"
+  - nombre: "Fraude o Estafa Informática: alguien ha realizado alguna manipulación que me ocasionó un perjuicio económico"
+  - nombre: "Phishing: alguien a través de un engaño me ha solicitado información confidencial -Nº de tarjetas de crédito, contraseñas, PIN, etc."
+  - nombre: "Suplantación de identidad digital: alguien se hace pasar por mi a través de un medio electrónico (mails, redes sociales, etc.). Se lo conoce como \"Robo de identidad\""
+  - nombre: "Denegación de Servicio: alguien ha realizado un ataque que me ha dejado sin poder acceder o prestar mi servicio informático o electrónico de forma normal"
+  - nombre: "Grooming: un menor ha sido acosado y/o extorsionado con fines sexuales a través de algún medio informático"
+  - nombre: "Calumnias o Injurias: alguien lo está calumniando o injuriando a través de medios electrónicos -redes sociales, correos electrónicos, celulares, etc."
+  - nombre: "Amenazas: alguien lo está amenazando o intimando a través de medios electrónicos -redes sociales, correos electrónicos, celulares, etc."
+  - nombre: "Pornografía Infantil: alguien está difundiendo, comercializando o facilitando pornografía infantil a través de medios electrónicos"
+  - nombre: "Violación de Datos Personales: alguien está ofreciendo, comercializando, interceptando o modificando datos personales sin autorización"
+  - nombre: "Difusión de Malware: alguien está produciendo, distribuyendo, vendiendo o propagando malware o software malicioso"

@@ -1,0 +1,5 @@
+accion_tomada:
+  - nombre: Si, ya denuncié y la investigación está en curso
+  - nombre: Si, denuncié pero la investigación no avanzó
+  - nombre: Si, denuncié y ya se ha condenado al o los culpables.
+  - nombre: No denuncié
