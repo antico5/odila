@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170407164724) do
+ActiveRecord::Schema.define(version: 20170411135314) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -56,7 +56,6 @@ ActiveRecord::Schema.define(version: 20170407164724) do
     t.integer  "pais_id"
     t.integer  "delito_id"
     t.string   "numero_ley"
-    t.string   "articulo"
     t.text     "texto"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
