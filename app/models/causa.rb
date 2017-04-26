@@ -1,2 +1,0 @@
-class Causa < ApplicationRecord
-end

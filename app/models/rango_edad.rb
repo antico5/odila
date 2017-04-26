@@ -1,2 +1,0 @@
-class RangoEdad < ApplicationRecord
-end
