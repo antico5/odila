@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170426132453) do
+ActiveRecord::Schema.define(version: 20170426133658) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -71,6 +71,15 @@ ActiveRecord::Schema.define(version: 20170426132453) do
     t.string   "nombre"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "preguntas", force: :cascade do |t|
+    t.string   "texto"
+    t.text     "descripcion"
+    t.boolean  "obligatoria"
+    t.integer  "tipo"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   add_foreign_key "centro_de_denuncias", "paises"
