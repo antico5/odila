@@ -10,22 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170421135316) do
+ActiveRecord::Schema.define(version: 20170426130442) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "accion_tomadas", force: :cascade do |t|
-    t.string   "nombre"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "causas", force: :cascade do |t|
-    t.string   "nombre"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "centro_de_denuncias", force: :cascade do |t|
     t.string   "direccion"
@@ -67,18 +55,6 @@ ActiveRecord::Schema.define(version: 20170421135316) do
     t.index ["pais_id"], name: "index_denuncias_on_pais_id", using: :btree
   end
 
-  create_table "generos", force: :cascade do |t|
-    t.string   "nombre"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "instrucciones", force: :cascade do |t|
-    t.string   "nombre"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "legislaciones", force: :cascade do |t|
     t.integer  "pais_id"
     t.integer  "delito_id"
@@ -98,12 +74,6 @@ ActiveRecord::Schema.define(version: 20170421135316) do
   end
 
   create_table "paises", force: :cascade do |t|
-    t.string   "nombre"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "rango_edades", force: :cascade do |t|
     t.string   "nombre"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
