@@ -1,0 +1,42 @@
+pregunta:
+  - id: 1
+    texto: La víctima de un delito informático ha sido...
+    descripcion: Esta información es opcional, pero si usted colabora nos ayudará a comprender cuáles son los sectores sociales más atacados por los ciberdelincuentes.
+    obligatoria: false
+    tipo: 1
+  - id: 2
+    texto: ¿Cuándo ha ocurrido el incidente?
+    descripcion: Aunque haya sucedido hace tiempo, repórtelo igual, a fin de poder colaborar con las estadísticas de los incidentes ocurridos.
+    obligatoria: true
+    tipo: 3
+  - id: 3
+    texto: ¿Ha denunciado el delito ante los organismos competentes en su país?
+    descripcion: 'Ej: Denuncia policial, denuncia ante la fiscalía de turno, etc.'
+    obligatoria: true
+    tipo: 1
+  - id: 4
+    texto: En el caso que NO haya realizado la denuncia, ¿Se debe a alguna de las siguientes causas?
+    descripcion: Puede elegir una o más causas.
+    obligatoria: true
+    tipo: 2
+  - id: 5
+    texto: Edad
+    descripcion: Esta información es opcional, pero si usted colabora nos ayudará a comprender cuáles son los sectores sociales más atacados por los ciberdelincuentes.
+    obligatoria: false
+    tipo: 1
+  - id: 6
+    texto: Género
+    descripcion: Esta información es opcional, pero si usted colabora nos ayudará a comprender cuáles son los sectores sociales más atacados por los ciberdelincuentes.
+    obligatoria: false
+    tipo: 1
+  - id: 7
+    texto: Nivel de Instrucción
+    descripcion: Esta información es opcional, pero si usted colabora nos ayudará a comprender cuáles son los sectores sociales más atacados por los ciberdelincuentes.
+    obligatoria: false
+    tipo: 1
+  - id: 8
+    texto: Correo electrónico
+    descripcion: En el caso que usted quiera (es opcional), puede recibir una respuesta al presente formulario donde se le indicará si el incidente que usted ha reportado, configura un delito penal en su país de residencia. En el caso que lo sea y que usted aún no haya denunciado formalmente ante las autoridades de su país, se le brindará información de contacto para que usted pueda proceder a realizarla. En el caso que decida utilizar esta opción, se le informa que sus datos personales serán tratados de acuerdo a los principios de acuerdo a la Ley 25.326 de Protección de Datos Personales de Argentina. Ante cualquier duda, puede ponerse en contacto.
+    obligatoria: false
+    tipo: 4
+
