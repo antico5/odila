@@ -4,4 +4,6 @@ class Pregunta < ApplicationRecord
             'fecha' => 3,
             'email' => 4,
             'selectbox' => 5 }
+
+  has_many :opciones
 end
