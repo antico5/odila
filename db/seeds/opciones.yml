@@ -1,0 +1,63 @@
+opcion:
+  - texto: Persona física
+    pregunta_id: 1
+  - texto: Empresa pequeña o mediana (PyME)
+    pregunta_id: 1
+  - texto: Gran empresa (más de 100 empleados)
+    pregunta_id: 1
+  - texto: Organismo gubernamental
+    pregunta_id: 1
+
+  - texto: Si, ya denuncie y la investigación está en curso
+    pregunta_id: 3
+  - texto: Si, denuncie pero la investigación no avanzó
+    pregunta_id: 3
+  - texto: Sí, denuncié y ya se ha condenado al o los culpables
+    pregunta_id: 3
+  - texto: No, no denuncié porque... (ver siguiente pregunta)
+    pregunta_id: 3
+
+  - texto: Ya denuncié
+    pregunta_id: 4
+  - texto: No creo en la Policía ni en la Justicia Penal
+    pregunta_id: 4
+  - texto: No me considero víctima de un delito
+    pregunta_id: 4
+  - texto: No quiero difundir públicamente el incidente (pérdida de confidencialidad)
+    pregunta_id: 4
+  - texto: Tengo temor de futuras represalias de parte del autor
+    pregunta_id: 4
+  - texto: No creo que la investigación tenga éxito
+    pregunta_id: 4
+  - texto: No estoy seguro de haber sido víctima de un delito penal
+    pregunta_id: 4
+  - texto: En parte me siento culpable por el incidente
+    pregunta_id: 4
+  - texto: No creo que la denuncia sea útil, porque el sistema penal no es apto para combatir el cibercrimen
+    pregunta_id: 4
+  - texto: Otros
+    pregunta_id: 4
+    tiene_observacion: true
+
+  - texto: Menores de 21 años
+    pregunta_id: 5
+  - texto: Entre 22 y 35 años
+    pregunta_id: 5
+  - texto: Entre 36 y 45 años
+    pregunta_id: 5
+  - texto: Más de 45 años
+    pregunta_id: 5
+
+  - texto: Masculino
+    pregunta_id: 6
+  - texto: Femenino
+    pregunta_id: 6
+
+  - texto: Sin instrucción
+    pregunta_id: 7
+  - texto: Primario completo
+    pregunta_id: 7
+  - texto: Secundario completo
+    pregunta_id: 7
+  - texto: Universitaria o terciario completo
+    pregunta_id: 7
