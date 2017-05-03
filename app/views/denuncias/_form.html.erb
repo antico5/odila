@@ -43,63 +43,7 @@
             en su país de residencia.
           </p>
           <span class="obliga">* Esta pregunta es obligatoria. </span><br>
-          <div class="form-group">   <label class="radio" for="input_1-0">
-            <input name="input_1[]" id="input_1-0" value="1" required="" type="radio">
-            Hacking: alguien accedió sin mi consentimiento a mis cuentas o sistemas
-            </label>   <label class="radio" for="input_1-1">
-            <input name="input_1[]" id="input_1-1" value="2" required="" type="radio">
-            Cracking: alguien ha modificado,
-            alterado o eliminado todo o parte de mis datos o sistemas informáticos
-            </label>   <label class="radio" for="input_1-2">
-            <input name="input_1[]" id="input_1-2" value="4" required="" type="radio">
-            Fraude o Estafa Informática: alguien
-            ha realizado alguna manipulación que me ocasionó un perjuicio económico
-            </label>   <label class="radio" for="input_1-3">
-            <input name="input_1[]" id="input_1-3" value="6" required="" type="radio">
-            Phishing: alguien a través de un
-            engaño me ha solicitado información confidencial -Nº de tarjetas de
-            crédito, contraseñas, PIN, etc.
-            </label>   <label class="radio" for="input_1-4">
-            <input name="input_1[]" id="input_1-4" value="7" required="" type="radio">
-            Suplantación de identidad digital:
-            alguien se hace pasar por mi a través de un medio electrónico (mails,
-            redes sociales, etc.). Se lo conoce como "Robo de identidad"
-            </label>   <label class="radio" for="input_1-5">
-            <input name="input_1[]" id="input_1-5" value="8" required="" type="radio">
-            Denegación de Servicio: alguien ha
-            realizado un ataque que me ha dejado sin poder acceder o prestar mi
-            servicio informático o electrónico de forma normal
-            </label>   <label class="radio" for="input_1-6">
-            <input name="input_1[]" id="input_1-6" value="9" required="" type="radio">
-            Grooming: un menor ha sido acosado
-            y/o extorsionado con fines sexuales a través de algún medio informático
-            </label>   <label class="radio" for="input_1-7">
-            <input name="input_1[]" id="input_1-7" value="56" required="" type="radio">
-            Calumnias o Injurias: alguien lo
-            está calumniando o injuriando a través de medios electrónicos -redes
-            sociales, correos electrónicos, celulares, etc.
-            </label>   <label class="radio" for="input_1-8">
-            <input name="input_1[]" id="input_1-8" value="57" required="" type="radio">
-            Amenazas: alguien lo está amenazando
-            o intimando a través de medios electrónicos -redes sociales, correos
-            electrónicos, celulares, etc.
-            </label>   <label class="radio" for="input_1-9">
-            <input name="input_1[]" id="input_1-9" value="58" required="" type="radio">
-            Pornografía Infantil: alguien está
-            difundiendo, comercializando o facilitando pornografía infantil a través
-            de medios electrónicos
-            </label>   <label class="radio" for="input_1-10">
-            <input name="input_1[]" id="input_1-10" value="59" required="" type="radio">
-            Violación de Datos Personales:
-            alguien está ofreciendo, comercializando, interceptando o modificando
-            datos personales sin autorización
-            </label>   <label class="radio" for="input_1-11">
-            <input name="input_1[]" id="input_1-11" value="60" required="" type="radio">
-            Difusión de Malware: alguien está
-            produciendo, distribuyendo, vendiendo o propagando malware o software
-            malicioso
-            </label>
-          </div>
+          <%= f.association :delito, as: :radio_buttons, label_method: :nombre, label: false %>
         </fieldset>
         <fieldset>
           <legend>4- ¿Cuándo ha ocurrido el incidente?</legend>
@@ -267,7 +211,7 @@
             </label>
           </div>
           <div class="form-group">
-            <input name="Enviar" value="Enviar" id="botonenviar" class="btn btn-warning" type="button">
+            <%= f.button :submit, 'Enviar', class: 'btn btn-warning' %>
           </div>
         </fieldset>
       <% end %>
