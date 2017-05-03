@@ -6,4 +6,22 @@ class Pregunta < ApplicationRecord
             'selectbox' => 5 }
 
   has_many :opciones
+
+  default_scope -> { includes(:opciones) }
+
+  def opcion_simple?
+    ['radio', 'selectbox'].include? tipo
+  end
+
+  def opcion_multiple?
+    tipo == 'checkbox'
+  end
+
+  def texto?
+    tipo == 'email'
+  end
+
+  def fecha?
+    tipo == 'fecha'
+  end
 end
