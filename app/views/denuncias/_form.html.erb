@@ -1,41 +1,20 @@
 <div class="row">
   <div class="col-lg-12">
     <div id="zonaForm">
-      <%= simple_form_for Denuncia.new do |f| %>
+      <%= simple_form_for @denuncia do |f| %>
         <fieldset>
-          <legend>1- ¿Cuál es su país de residencia?</legend>
+          <legend>¿Cuál es su país de residencia?</legend>
           <p>
             Esta información es útil para poder determinar si el incidente es considerado un delito
             informático en el país donde usted se encuentra. Sólo para Latinoamérica
           </p>
           <span class="obliga">* Esta pregunta es obligatoria. </span><br>
           <div class="col-lg-4">
-            <%= f.association :pais, label_method: :nombre, label: false, input_html: { class: 'selectpicker show-tick form-control' } %>
+            <%= f.association :pais, label: false, input_html: { class: 'selectpicker show-tick form-control' } %>
           </div>
         </fieldset>
         <fieldset>
-          <legend>2- La víctima de un delito informático ha sido...</legend>
-          <p>Esta información es opcional, pero si usted
-            colabora nos ayudará a comprender cuáles son los sectores sociales más
-            atacados por los ciberdelincuentes.
-          </p>
-          <div class="form-group">   <label class="radio" for="input_10-0">
-            <input name="input_10[]" id="input_10-0" value="53" type="radio">
-            Persona física
-            </label>   <label class="radio" for="input_10-1">
-            <input name="input_10[]" id="input_10-1" value="54" type="radio">
-            Empresa pequeña o mediana (PyME)
-            </label>   <label class="radio" for="input_10-2">
-            <input name="input_10[]" id="input_10-2" value="55" type="radio">
-            Gran empresa (más de 100 empleados)
-            </label>   <label class="radio" for="input_10-3">
-            <input name="input_10[]" id="input_10-3" value="61" type="radio">
-            Organismo gubernamental
-            </label>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>3- ¿Qué tipo de incidente ha sufrido?</legend>
+          <legend>¿Qué tipo de incidente ha sufrido?</legend>
           <p>De acuerdo a su lugar de residencia, dicho
             incidente podrá ser considerado como un delito informático de acuerdo a
             su legislación vigente. Si usted lo desea, una vez finalizado el
@@ -45,154 +24,9 @@
           <span class="obliga">* Esta pregunta es obligatoria. </span><br>
           <%= f.association :delito, as: :radio_buttons, label_method: :nombre, label: false %>
         </fieldset>
-        <fieldset>
-          <legend>4- ¿Cuándo ha ocurrido el incidente?</legend>
-          <p>Aunque haya sucedido hace tiempo, repórtelo igual, a fin de poder colaborar con las estadísticas de los incidentes ocurridos.</p>
-          <span class="obliga">* Esta pregunta es obligatoria. Formato DD-MM-AAAA. Por ejemplo 20-08-2014</span><br>
-          <div class="form-group">
-            <div class="col-sm-4">
-              <input class="form-control hasDatepicker" name="input_5" id="input_5" placeholder="" value="04-04-2017" maxlength="10" required="" type="date">
-            </div>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>5- ¿Ha denunciado el delito ante los organismos competentes en su país?</legend>
-          <p>Ej: Denuncia policial, denuncia ante la fiscalía de turno, etc.</p>
-          <span class="obliga">* Esta pregunta es obligatoria. </span><br>
-          <div class="form-group">   <label class="radio" for="input_2-0">
-            <input name="input_2[]" id="input_2-0" value="11" required="" type="radio">
-            Si, ya denuncie y la investigación está en curso
-            </label>   <label class="radio" for="input_2-1">
-            <input name="input_2[]" id="input_2-1" value="12" required="" type="radio">
-            Si, denuncie pero la investigación no avanzó
-            </label>   <label class="radio" for="input_2-2">
-            <input name="input_2[]" id="input_2-2" value="13" required="" type="radio">
-            Sí, denuncié y ya se ha condenado al o los culpables.
-            </label>   <label class="radio" for="input_2-3">
-            <input name="input_2[]" id="input_2-3" value="14" required="" type="radio">
-            <b>No, no denuncié porque... (ver siguiente pregunta)</b>
-            </label>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>6- En el caso que NO haya realizado la denuncia, ¿Se debe a alguna de las siguientes causas?</legend>
-          <p>Puede elegir una o más causas.</p>
-          <span class="obliga">* Esta pregunta es obligatoria. </span><br>
-          <div class="form-group">
-            <label class="checkbox" for="input_3-0">
-            <input name="input_3[]" id="input_3-0" value="63" type="checkbox">
-            <b>Ya denuncié</b>
-            </label>   <label class="checkbox" for="input_3-1">
-            <input name="input_3[]" id="input_3-1" value="15" type="checkbox">
-            No creo en la Policía ni en la Justicia Penal
-            </label>   <label class="checkbox" for="input_3-2">
-            <input name="input_3[]" id="input_3-2" value="16" type="checkbox">
-            No me considero víctima de un delito
-            </label>   <label class="checkbox" for="input_3-3">
-            <input name="input_3[]" id="input_3-3" value="17" type="checkbox">
-            No quiero difundir públicamente el incidente (pérdida de confidencialidad)
-            </label>   <label class="checkbox" for="input_3-4">
-            <input name="input_3[]" id="input_3-4" value="18" type="checkbox">
-            Tengo temor de futuras represalias de parte del autor
-            </label>   <label class="checkbox" for="input_3-5">
-            <input name="input_3[]" id="input_3-5" value="19" type="checkbox">
-            No creo que la investigación tenga éxito
-            </label>   <label class="checkbox" for="input_3-6">
-            <input name="input_3[]" id="input_3-6" value="20" type="checkbox">
-            No estoy seguro de haber sido víctima de un delito penal
-            </label>   <label class="checkbox" for="input_3-7">
-            <input name="input_3[]" id="input_3-7" value="21" type="checkbox">
-            En parte me siento culpable por el incidente
-            </label>   <label class="checkbox" for="input_3-8">
-            <input name="input_3[]" id="input_3-8" value="22" type="checkbox">
-            No creo que la denuncia sea útil,
-            porque el sistema penal no es apto para combatir el cibercrimen
-            </label>
-            <div class="input-group col-sm-5">
-              <span class="input-group-addon">
-              <input name="input_3[]" id="input_3-9" value="10" type="checkbox">
-              Otros
-              </span>
-              <input class="form-control" name="obs_3_10" type="text">
-            </div>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>7- Edad</legend>
-          <p>Esta información es opcional, pero si usted
-            colabora nos ayudará a comprender cuáles son los sectores sociales más
-            atacados por los ciberdelincuentes.
-          </p>
-          <div class="form-group">   <label class="radio" for="input_6-0">
-            <input name="input_6[]" id="input_6-0" value="43" type="radio">
-            Menores de 21 años
-            </label>   <label class="radio" for="input_6-1">
-            <input name="input_6[]" id="input_6-1" value="44" type="radio">
-            Entre 22 y 35 años
-            </label>   <label class="radio" for="input_6-2">
-            <input name="input_6[]" id="input_6-2" value="45" type="radio">
-            Entre 36 y 45 años
-            </label>   <label class="radio" for="input_6-3">
-            <input name="input_6[]" id="input_6-3" value="46" type="radio">
-            Más de 45 años
-            </label>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>8- Género</legend>
-          <p>Esta información es opcional, pero si usted
-            colabora nos ayudará a comprender cuáles son los sectores sociales más
-            atacados por los ciberdelincuentes.
-          </p>
-          <div class="form-group">   <label class="radio" for="input_7-0">
-            <input name="input_7[]" id="input_7-0" value="47" type="radio">
-            Masculino
-            </label>   <label class="radio" for="input_7-1">
-            <input name="input_7[]" id="input_7-1" value="48" type="radio">
-            Femenino
-            </label>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>9- Nivel de Instrucción</legend>
-          <p>Esta información es opcional, pero si usted
-            colabora nos ayudará a comprender cuáles son los sectores sociales más
-            atacados por los ciberdelincuentes.
-          </p>
-          <div class="form-group">   <label class="radio" for="input_8-0">
-            <input name="input_8[]" id="input_8-0" value="49" type="radio">
-            Sin instrucción
-            </label>   <label class="radio" for="input_8-1">
-            <input name="input_8[]" id="input_8-1" value="50" type="radio">
-            Primaria completo
-            </label>   <label class="radio" for="input_8-2">
-            <input name="input_8[]" id="input_8-2" value="51" type="radio">
-            Secundaria completo
-            </label>   <label class="radio" for="input_8-3">
-            <input name="input_8[]" id="input_8-3" value="52" type="radio">
-            Universitaria o Terciaria completo
-            </label>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>10- Correo electrónico</legend>
-          <p>En el caso que usted quiera (es opcional),
-            puede recibir una respuesta al presente formulario donde se le indicará
-            si el incidente que usted ha reportado, configura un delito penal en su
-            país de residencia. En el caso que lo sea y que usted aún no haya
-            denunciado formalmente ante las autoridades de su país, se le brindará
-            información de contacto para que usted pueda proceder a realizarla. En
-            el caso que decida utilizar esta opción, se le informa que sus datos
-            personales serán tratados de acuerdo a los principios de acuerdo a la
-            Ley 25.326 de Protección de Datos Personales de Argentina. Ante
-            cualquier duda, puede ponerse en contacto.
-          </p>
-          <div class="form-group">
-            <div class="col-sm-4">
-              <input class="form-control" name="input_9" id="input_9" placeholder="" type="email">
-            </div>
-          </div>
-        </fieldset>
+        <% Pregunta.all.each do |pregunta| %>
+          <%= render partial: 'denuncias/pregunta', locals: { pregunta: pregunta, form: f } %>
+        <% end %>
         <fieldset>
           <span class="chico">ODILA no pretende ser un asesoramiento para el
           usuario. El usuario debe siempre consultar ante un profesional

@@ -1,0 +1,35 @@
+<% # locals: form, pregunta %>
+
+<fieldset>
+  <legend><%= pregunta.texto %></legend>
+  <p><%= pregunta.descripcion %></p>
+  <% if pregunta.obligatoria? %>
+    <span class="obliga">* Esta pregunta es obligatoria. </span><br>
+  <% end %>
+  <%= form.simple_fields_for :item_denuncias do |f| %>
+    <%= f.input :pregunta_id,
+      as: :hidden,
+      input_html: { value: pregunta.id } %>
+    <% if pregunta.opcion_simple? %>
+      <%= f.input :opcion_id,
+        collection: pregunta.opciones,
+        as: :radio_buttons,
+        label: false,
+        required: pregunta.obligatoria? %>
+    <% elsif pregunta.opcion_multiple? %>
+      <%= f.input :opciones_multiples,
+        collection: pregunta.opciones,
+        as: :check_boxes,
+        label: false,
+        required: pregunta.obligatoria? %>
+    <% elsif pregunta.texto? %>
+      <%= f.input :observacion,
+        label: false,
+        required: pregunta.obligatoria? %>
+    <% elsif pregunta.fecha? %>
+      <%= f.input :fecha,
+        label: false,
+        required: pregunta.obligatoria? %>
+    <% end %>
+  <% end %>
+</fieldset>
