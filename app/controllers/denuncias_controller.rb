@@ -13,6 +13,6 @@ class DenunciasController < ApplicationController
 
   private
     def denuncia_params
-      params.require(:denuncia).permit(:pais_id, :delito_id, :fecha)
+      params.require(:denuncia).permit(:pais_id, :delito_id, :fecha, item_denuncias_attributes: [:pregunta_id, :opcion_id])
     end
 end
