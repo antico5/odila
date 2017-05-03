@@ -11,13 +11,10 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery_002
-//= require jquery_003
 //= require jquery_ujs
 //= require bootstrap
 //= require classie
 //= require cloudflare
-//= require form
 //= require jquery-ui
 //= require modernizr
 //= require_tree .
