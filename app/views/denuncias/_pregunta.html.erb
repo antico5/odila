@@ -21,7 +21,7 @@
         collection: pregunta.opciones,
         as: :check_boxes,
         label: false,
-        required: pregunta.obligatoria? %>
+        include_hidden: false %>
     <% elsif pregunta.texto? %>
       <%= f.input :observacion,
         label: false,
