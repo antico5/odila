@@ -2,18 +2,19 @@
   <div class="col-lg-12">
     <div id="zonaForm">
       <%= simple_form_for @denuncia do |f| %>
-        <fieldset>
+        <!-- Preguntas estaticas: pais y delito -->
+        <fieldset class="pregunta" data-numero='1'>
           <legend>¿Cuál es su país de residencia?</legend>
           <p>
             Esta información es útil para poder determinar si el incidente es considerado un delito
             informático en el país donde usted se encuentra. Sólo para Latinoamérica
           </p>
-          <span class="obliga">* Esta pregunta es obligatoria. </span><br>
           <div class="col-lg-4">
             <%= f.association :pais, label: false, input_html: { class: 'selectpicker show-tick form-control' } %>
           </div>
+          <button class="btn btn-primary siguiente" data-siguiente='2'>Siguiente pregunta</button>
         </fieldset>
-        <fieldset>
+        <fieldset class="pregunta" data-numero='2'>
           <legend>¿Qué tipo de incidente ha sufrido?</legend>
           <p>De acuerdo a su lugar de residencia, dicho
             incidente podrá ser considerado como un delito informático de acuerdo a
@@ -21,13 +22,18 @@
             reporte, se le enviará un mail informando sobre la legislación existente
             en su país de residencia.
           </p>
-          <span class="obliga">* Esta pregunta es obligatoria. </span><br>
           <%= f.association :delito, as: :radio_buttons, label_method: :nombre, label: false %>
+          <button class="btn btn-primary siguiente" data-siguiente='3'>Siguiente pregunta</button>
         </fieldset>
+
+        <!-- Preguntas dinamicas (creadas por panel de admin) -->
+        <% numero_pregunta = 2 %>
         <% Pregunta.all.each do |pregunta| %>
-          <%= render partial: 'denuncias/pregunta', locals: { pregunta: pregunta, form: f } %>
+          <% numero_pregunta += 1 %>
+          <%= render partial: 'denuncias/pregunta',
+            locals: { pregunta: pregunta, form: f, numero: numero_pregunta } %>
         <% end %>
-        <fieldset>
+        <fieldset class="pregunta" data-numero='<%= numero_pregunta + 1 %>'>
           <span class="chico">ODILA no pretende ser un asesoramiento para el
           usuario. El usuario debe siempre consultar ante un profesional
           especializado en la materia. El sistema no garantiza la exactitud de los
