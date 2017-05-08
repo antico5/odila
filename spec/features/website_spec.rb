@@ -5,7 +5,7 @@ RSpec.feature 'Website features' do
     visit '/'
     expect(page).to have_text('Qué es ODILA?')
     expect(page).to have_text('Denunciar delitos informáticos')
-    expect(page).to have_css('form#Fencuesta')
+    expect(page).to have_css('form.new_denuncia')
     expect(page).to have_css('form#fContacto')
   end
   scenario 'User visits the difusion page' do
