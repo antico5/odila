@@ -3,10 +3,14 @@ class DenunciasController < ApplicationController
     @denuncia = Denuncia.new(denuncia_params)
 
     if @denuncia.save
-      redirect_to root_path, notice: 'Denuncia was successfully created.'
+      redirect_to exito_denuncias_path
     else
-      redirect_to root_path, notice: 'Denuncia was not created.'
+      redirect_to root_path, error: 'Hubo errores procesando su denuncia.'
     end
+  end
+
+  def exito
+
   end
 
   private
