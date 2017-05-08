@@ -11,7 +11,7 @@
           </p>
           <div class="row">
             <div class="col-lg-4">
-              <%= f.association :pais, label: false, input_html: { class: 'form-control' } %>
+              <%= f.association :pais, label: false, input_html: { class: 'form-control opcion' } %>
             </div>
           </div>
           <%= boton_siguiente(2) %>
@@ -24,7 +24,8 @@
             reporte, se le enviará un mail informando sobre la legislación existente
             en su país de residencia.
           </p>
-          <%= f.association :delito, as: :radio_buttons, label_method: :nombre, label: false %>
+          <%= f.association :delito, as: :radio_buttons, label_method: :nombre, label: false,
+                input_html: { class: 'opcion' } %>
           <%= boton_siguiente(3) %>
         </fieldset>
 
@@ -46,14 +47,14 @@
           de forma anónima serán publicados en informes anuales.</span>
           <div class="form-group">
             <label class="checkbox" for="termserv">
-            <input id="termserv" name="termserv" value="acepto" required="" type="checkbox">
+            <input id="termserv" name="termserv" value="acepto" class='opcion' required="" type="checkbox">
             Acepto y entiendo que el presente
             formulario no supone una denuncia formal ante las autoridades
             pertinentes.
             </label>
           </div>
           <div class="form-group">
-            <%= f.button :submit, 'Enviar', class: 'btn btn-warning' %>
+            <button type="submit" class="btn btn-warning" disabled>Enviar</button>
           </div>
         </fieldset>
       <% end %>
