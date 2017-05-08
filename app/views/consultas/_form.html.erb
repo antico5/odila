@@ -1,0 +1,23 @@
+<%= simple_form_for Consulta.new do |f| %>
+  <div class="row">
+    <div class="form-group col-xs-12 floating-label-form-group">
+      <%= f.input :nombre, input_html: { placeholder: 'Nombre y Apellido', class: 'form-control' } %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-group col-xs-12 floating-label-form-group">
+      <%= f.input :email, input_html: { placeholder: 'Email', class: 'form-control' } %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-group col-xs-12 floating-label-form-group">
+      <%= f.input :consulta, input_html: { placeholder: 'Consulta', class: 'form-control', rows: 5 } %>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="form-group col-xs-12">
+      <%= f.submit 'Enviar', class: 'btn btn-warning' %>
+    </div>
+  </div>
+<% end %>

@@ -110,35 +110,7 @@
     <div id="waitcontact" style="display: none;">&nbsp;</div>
     <div class="row principal">
       <div class="col-lg-8 col-lg-offset-2">
-        <div id="z_form_contacto">
-          <form role="form" action="" method="post" id="fContacto">
-            <input name="key_contacto" value="7627bb427bcae0852500a40de598de05" type="hidden">
-            <div class="row">
-              <div class="form-group col-xs-12 floating-label-form-group">
-                <label for="apenom">Nombre y Apellido</label>
-                <input class="form-control" name="apenom" placeholder="Nombre y apellido" type="text">
-              </div>
-            </div>
-            <div class="row">
-              <div class="form-group col-xs-12 floating-label-form-group">
-                <label for="email">E-mail</label>
-                <input class="form-control" name="email" placeholder="E-mail" type="email">
-              </div>
-            </div>
-            <div class="row">
-              <div class="form-group col-xs-12 floating-label-form-group">
-                <label for="texto">Mensaje</label>
-                <textarea placeholder="Consulta" name="texto" class="form-control" rows="5"></textarea>
-              </div>
-            </div>
-            <br>
-            <div class="row">
-              <div class="form-group col-xs-12">
-                <input name="Enviar" value="Enviar" id="enviarcontacto" class="btn btn-warning" type="button">
-              </div>
-            </div>
-          </form>
-        </div>
+        <%= render partial: 'consultas/form' %>
       </div>
     </div>
   </div>
