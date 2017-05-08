@@ -8,7 +8,7 @@ class ItemDenuncia < ApplicationRecord
   def respuesta
     case pregunta.tipo
     when 'radio' || 'selectbox'
-      opcion.texto
+      opcion.try :texto
     when 'checkbox'
       Opcion.find(opciones_multiples).map &:texto
     when 'fecha'
