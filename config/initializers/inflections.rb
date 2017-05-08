@@ -14,6 +14,7 @@ ActiveSupport::Inflector.inflections(:en) do |inflect|
   inflect.irregular 'pregunta', 'preguntas'
   inflect.irregular 'opcion', 'opciones'
   inflect.irregular 'item_denuncia', 'item_denuncias'
+  inflect.irregular 'consulta', 'consultas'
 end
 
 # These inflection rules are supported but not enabled by default:
