@@ -260,6 +260,9 @@ footer .footer-below {
 .btn:focus, .btn:active, .btn.active {
 	outline: 0;
 }
+#Denuncia {
+  min-height: 90vh;
+}
 #Denuncia legend {
 	margin-bottom: 0;
 	width: inherit;
