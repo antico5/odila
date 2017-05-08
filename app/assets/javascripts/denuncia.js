@@ -10,6 +10,7 @@ function setearEventosFormulario() {
     // Los botones con clase 'siguiente' llaman a mostrarPregunta con numero en el attribute
     // 'siguiente'
     $('button.siguiente').on('click', function(){
+      location.hash = '#Denuncia'
       mostrarPregunta($(this).data('siguiente'))
     })
 
@@ -25,6 +26,5 @@ function setearEventosFormulario() {
 function mostrarPregunta(numero){
   $('fieldset.pregunta:not([data-numero=' + numero + '])').hide()
   $('fieldset.pregunta[data-numero=' + numero + ']').fadeIn(600)
-  location.hash = '#Denuncia'
 }
 
