@@ -3,36 +3,36 @@
 <fieldset class="pregunta" data-numero='<%= numero %>'>
   <legend><%= pregunta.texto %></legend>
   <p><%= pregunta.descripcion %></p>
-  <%= form.simple_fields_for :item_denuncias do |f| %>
-    <%= f.input :pregunta_id,
-      as: :hidden,
-      input_html: { value: pregunta.id } %>
-    <% if pregunta.opcion_simple? %>
-      <%= f.input :opcion_id,
-        collection: pregunta.opciones,
-        as: :radio_buttons,
-        label: false,
-        required: pregunta.obligatoria? %>
-    <% elsif pregunta.opcion_multiple? %>
-      <%= f.input :opciones_multiples,
-        collection: pregunta.opciones,
-        as: :check_boxes,
-        label: false,
-        include_hidden: false %>
-    <% elsif pregunta.texto? %>
-      <div class="col-lg-4">
-        <%= f.input :observacion,
+  <div class="opciones">
+    <%= form.simple_fields_for :item_denuncias do |f| %>
+      <%= f.input :pregunta_id,
+        as: :hidden,
+        input_html: { value: pregunta.id } %>
+      <% if pregunta.opcion_simple? %>
+        <%= f.input :opcion_id,
+          collection: pregunta.opciones,
+          as: :radio_buttons,
           label: false,
-          required: pregunta.obligatoria?,
-          input_html: { type: 'email', class: 'form-control' } %>
-      </div>
-    <% elsif pregunta.fecha? %>
-      <%= f.input :fecha,
-        label: false,
-        required: pregunta.obligatoria? %>
+          required: pregunta.obligatoria? %>
+      <% elsif pregunta.opcion_multiple? %>
+        <%= f.input :opciones_multiples,
+          collection: pregunta.opciones,
+          as: :check_boxes,
+          label: false,
+          include_hidden: false %>
+      <% elsif pregunta.texto? %>
+        <div class="col-lg-4">
+          <%= f.input :observacion,
+            label: false,
+            required: pregunta.obligatoria?,
+            input_html: { type: 'email', class: 'form-control' } %>
+        </div>
+      <% elsif pregunta.fecha? %>
+        <%= f.input :fecha,
+          label: false,
+          required: pregunta.obligatoria? %>
+      <% end %>
     <% end %>
-  <% end %>
-  <button href='#Denuncia' class="btn btn-primary siguiente" data-siguiente='<%= numero + 1 %>'>
-    Siguiente pregunta
-  </button>
+  </div>
+  <%= boton_siguiente (numero+1) %>
 </fieldset>
