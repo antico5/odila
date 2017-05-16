@@ -26,6 +26,7 @@
           </p>
           <%= f.association :delito, as: :radio_buttons, label_method: :nombre, label: false,
                 input_html: { class: 'opcion' } %>
+          <%= boton_anterior(1) %>
           <%= boton_siguiente(3) %>
         </fieldset>
 
