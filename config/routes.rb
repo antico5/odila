@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get 'difusion' => 'home#difusion'
   get 'tos' => 'home#tos'
 
-  resources :denuncias do
+  resources :denuncias, only: [:show, :create] do
     collection do
       get 'exito'
     end

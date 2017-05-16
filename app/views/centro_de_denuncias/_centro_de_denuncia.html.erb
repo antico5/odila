@@ -1,0 +1,17 @@
+<% centro_attributes =  {
+    'Direccion' => :direccion,
+    'Ciudad' => :ciudad,
+    'Teléfonos' => :telefonos,
+    'Sitio Web' => :website,
+    'E-Mail' => :email,
+    'Fiscales' => :fiscales,
+    'Twitter' => :twitter
+} %>
+<b><%= centro_de_denuncia.nombre %></b>
+<ul>
+  <% centro_attributes.each do |titulo, attribute| %>
+    <% if centro_de_denuncia.attribute_present? attribute %>
+      <li><b><%= titulo %>: </b> <%= centro_de_denuncia.read_attribute attribute %></li>
+    <% end %>
+  <% end %>
+</ul>
