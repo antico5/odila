@@ -6,6 +6,9 @@
         Purpose of the stylesheet follows.
 */
 
+$verdeclaro: #346160;
+$verdeoscuro: #2a4d4c;
+
 root {
 	display: block;
 }
@@ -193,7 +196,7 @@ form .row:first-child .floating-label-form-group {
 
 #Quienes h2 {
 	margin: 0 0 20px 0;
-	color: #2a4d4c;
+	color: $verdeoscuro;
 	font-size: 20pt;
 }
 #Quienes p {
@@ -202,7 +205,7 @@ form .row:first-child .floating-label-form-group {
 }
 #Quienes .principal h2, #Glosario .principal h2, #Contacto .principal h2 {
 	margin: 10px 0;
-	color: #2a4d4c;
+	color: $verdeoscuro;
 	font-size: 20pt;
 }
 #Quienes .principal p, #Glosario .principal p, #Contacto .principal p {
@@ -211,7 +214,7 @@ form .row:first-child .floating-label-form-group {
 }
 .principal h2 {
 	margin: 10px 0;
-	color: #2a4d4c;
+	color: $verdeoscuro;
 	font-size: 20pt;
 }
 .principal p {
@@ -230,7 +233,7 @@ footer h3 {
 }
 footer .footer-above {
 	padding-top: 20px;
-	background-color: #346160;
+	background-color: $verdeclaro;
 }
 footer .footer-col {
 	margin-bottom: 30px;
@@ -245,7 +248,7 @@ footer .footer-col h3 {
 }
 footer .footer-below {
 	padding: 25px 0;
-	background-color: #2a4d4c;
+	background-color: $verdeoscuro;
 }
 .btn-social {
 	display: inline-block;
