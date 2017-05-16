@@ -1,6 +1,7 @@
 class DenunciasController < ApplicationController
   def create
     @denuncia = Denuncia.new(denuncia_params)
+    @denuncia.ip = request.remote_ip
 
     if @denuncia.save
       redirect_to denuncia_path(@denuncia)
