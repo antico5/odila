@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170508143642) do
+ActiveRecord::Schema.define(version: 20170516132034) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -47,7 +47,6 @@ ActiveRecord::Schema.define(version: 20170508143642) do
   end
 
   create_table "denuncias", force: :cascade do |t|
-    t.date     "fecha"
     t.integer  "delito_id"
     t.integer  "pais_id"
     t.datetime "created_at", null: false
