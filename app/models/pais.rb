@@ -6,4 +6,8 @@ class Pais < ApplicationRecord
   def to_label
     nombre
   end
+
+  def to_s
+    to_label
+  end
 end
