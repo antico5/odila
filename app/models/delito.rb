@@ -3,6 +3,10 @@ class Delito < ApplicationRecord
   has_many :denuncias
 
   def to_label
-    texto
+    nombre
+  end
+
+  def to_s
+    to_label
   end
 end

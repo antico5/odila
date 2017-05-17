@@ -24,4 +24,8 @@ class Pregunta < ApplicationRecord
   def fecha?
     tipo == 'fecha'
   end
+
+  def to_s
+    texto
+  end
 end
