@@ -18,6 +18,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Project gems
 gem 'simple_form'
+gem 'activeadmin'
+gem 'devise'
+gem 'cancancan'
 
 
 group :development, :test do
