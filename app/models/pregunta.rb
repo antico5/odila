@@ -5,7 +5,7 @@ class Pregunta < ApplicationRecord
             'email' => 4,
             'selectbox' => 5 }
 
-  has_many :opciones
+  has_many :opciones, inverse_of: :pregunta, dependent: :destroy
 
   default_scope -> { includes(:opciones) }
 

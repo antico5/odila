@@ -1,8 +1,8 @@
 class Denuncia < ApplicationRecord
-  has_many :item_denuncias, inverse_of: :denuncia
+  has_many :item_denuncias, inverse_of: :denuncia, dependent: :destroy
 
-  belongs_to :delito
-  belongs_to :pais
+  belongs_to :delito, inverse_of: :denuncias
+  belongs_to :pais, inverse_of: :denuncias
 
   accepts_nested_attributes_for :item_denuncias
 

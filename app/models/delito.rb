@@ -1,6 +1,6 @@
 class Delito < ApplicationRecord
-  has_many :legislaciones
-  has_many :denuncias
+  has_many :legislaciones, inverse_of: :delito
+  has_many :denuncias, inverse_of: :delito
 
   def to_label
     nombre
