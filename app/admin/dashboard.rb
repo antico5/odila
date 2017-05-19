@@ -12,10 +12,15 @@ ActiveAdmin.register_page 'Dashboard' do
             column :created_at
           end
         end
-
       end
-      column do
 
+      column do
+        panel 'Denuncias por pais' do
+          table_for Denuncia.cantidad_por_pais.to_a do
+            column('Pais') { |pais| pais.first.nombre }
+            column('Denuncias') { |pais| pais.last }
+          end
+        end
       end
     end
     # Here is an example of a simple dashboard with columns and panels.

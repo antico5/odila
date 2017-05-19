@@ -6,7 +6,12 @@ class Denuncia < ApplicationRecord
 
   accepts_nested_attributes_for :item_denuncias
 
+  def self.cantidad_por_pais
+    group(:pais).order(count: 'desc').count
+  end
+
   def legislacion
     Legislacion.find_by delito_id: delito_id, pais_id: pais_id
   end
+
 end
