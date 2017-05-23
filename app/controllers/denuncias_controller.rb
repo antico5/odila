@@ -4,6 +4,7 @@ class DenunciasController < ApplicationController
     @denuncia.ip = request.remote_ip
 
     if @denuncia.save
+      DenunciaMailer.resultado(@denuncia.id).deliver_later
       redirect_to denuncia_path(@denuncia)
     else
       redirect_to root_path, error: 'Hubo errores procesando su denuncia.'
