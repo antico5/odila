@@ -1,4 +1,5 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'from@example.com'
+  BCC = ENV['MAILER_BCC']
+  default from: '"ODILA - Observatorio Delitos Informaticos Latinoamerica" <odila@odila.com>'
   layout 'mailer'
 end

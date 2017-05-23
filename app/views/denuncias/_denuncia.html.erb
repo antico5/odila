@@ -7,7 +7,7 @@
   </p>
 
   <hr />
-  <h5>Legislación aplicable a Delitos Informáticos</h5>
+  <h4>Legislación aplicable a Delitos Informáticos</h4>
   <p>
   De acuerdo a su reporte, Usted ha sido víctima de un caso de <b><%= @denuncia.delito.nombre %></b>
   en <b><%= @denuncia.pais.nombre %></b>.
@@ -27,13 +27,13 @@
   <% end %>
 
   <hr />
-  <h5>Centros de consulta y denuncia:</h5>
+  <h4>Centros de consulta y denuncia:</h4>
   <% @denuncia.centros.each do |centro| %>
     <%= render centro %>
   <% end %>
 
   <hr />
-  <h5>Recomendaciones generales</h5>
+  <h4>Recomendaciones generales</h4>
   <ul>
     <li>No modifique, altere o elimine ningún tipo de información que pueda llegar a ser útil para la investigación del hecho. En materia informática es de vital importancia resguardar las evidencias digitales, que son la fuente de prueba necesaria para poder avanzar sobre la investigación del caso.</li>
     <li>Realice inmediatamente la denuncia ante la dependencia policial más cercana a su domicilio (Comisaría de su barrio en cualquier lugar del país) o bien ante la fiscalía más cercana. Recuerden que tienen la obligación de tomar su denuncia.</li>
