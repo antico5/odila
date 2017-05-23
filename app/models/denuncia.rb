@@ -14,4 +14,12 @@ class Denuncia < ApplicationRecord
     Legislacion.find_by delito_id: delito_id, pais_id: pais_id
   end
 
+  def centros
+    pais.centro_de_denuncias
+  end
+
+  def email
+    @email ||= item_denuncias.map(&:observacion).select { |texto| texto =~ /@/ }.first
+  end
+
 end

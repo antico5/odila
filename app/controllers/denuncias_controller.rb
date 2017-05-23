@@ -12,8 +12,6 @@ class DenunciasController < ApplicationController
 
   def show
     @denuncia = Denuncia.find(params[:id])
-    @legislacion = @denuncia.legislacion
-    @centros = CentroDeDenuncia.where pais: @denuncia.pais
   end
 
   private
