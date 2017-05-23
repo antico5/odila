@@ -65,7 +65,6 @@ Rails.application.configure do
     :port => 587,
     :domain => ENV['MAILER_DOMAIN'],
     :authentication => "plain",
-    :enable_starttls_auto => true,
     :user_name => ENV['MAILER_USER'],
     :password => ENV['MAILER_PASSWORD']
 
