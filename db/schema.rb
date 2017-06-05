@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170517145320) do
+ActiveRecord::Schema.define(version: 20170605153216) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -136,6 +136,7 @@ ActiveRecord::Schema.define(version: 20170517145320) do
     t.integer  "tipo"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.integer  "orden"
   end
 
   add_foreign_key "centro_de_denuncias", "paises"
