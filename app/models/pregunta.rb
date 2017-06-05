@@ -8,7 +8,7 @@ class Pregunta < ApplicationRecord
   has_many :opciones, inverse_of: :pregunta, dependent: :destroy
   has_many :item_denuncias, inverse_of: :pregunta
 
-  default_scope -> { includes(:opciones) }
+  default_scope -> { includes(:opciones).order(:orden) }
 
   def opcion_simple?
     ['radio', 'selectbox'].include? tipo
