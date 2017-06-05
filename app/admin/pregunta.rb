@@ -1,7 +1,7 @@
 ActiveAdmin.register Pregunta do
-  permit_params :texto, :descripcion, :obligatoria, :tipo
+  permit_params :texto, :descripcion, :obligatoria, :tipo, :orden
 
-  config.sort_order = 'id_asc'
+  config.sort_order = 'orden_asc'
   config.filters = false
 
   index do
@@ -10,6 +10,7 @@ ActiveAdmin.register Pregunta do
     column :descripcion
     column :tipo
     column :obligatoria
+    column :orden
     actions
   end
 end
