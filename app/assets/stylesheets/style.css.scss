@@ -8,6 +8,7 @@
 
 $verdeclaro: #346160;
 $verdeoscuro: #2a4d4c;
+$naranja: #EC971F;
 
 root {
 	display: block;
@@ -131,7 +132,7 @@ section.success {
 }
 section.contact {
 	color: #fff;
-	background: #EC971F;
+	background: $naranja;
 }
  @media(max-width:767px) {
  section {
@@ -265,6 +266,11 @@ footer .footer-below {
 }
 #Denuncia {
   min-height: 90vh;
+
+  .progreso {
+    float: right;
+    color: $naranja;
+  }
 }
 #Denuncia legend {
 	margin-bottom: 0;

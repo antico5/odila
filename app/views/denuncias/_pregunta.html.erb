@@ -1,7 +1,8 @@
 <% # locals: form, pregunta, numero %>
 
 <fieldset class="pregunta" data-numero='<%= numero %>'>
-  <legend><%= pregunta.texto %></legend>
+  <span class='progreso'><%= "#{numero} de #{total_preguntas}" %></span>
+  <h4><%= pregunta.texto %></h4>
   <p><%= pregunta.descripcion %></p>
   <div class="opciones">
     <%= form.simple_fields_for :item_denuncias do |f| %>

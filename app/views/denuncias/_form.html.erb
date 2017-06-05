@@ -1,10 +1,12 @@
+<% total_preguntas = @preguntas.count + 2 %>
 <div class="row">
   <div class="col-lg-12">
     <div id="zonaForm">
       <%= simple_form_for @denuncia do |f| %>
         <!-- Preguntas estaticas: pais y delito -->
         <fieldset class="pregunta" data-numero='1'>
-          <legend>¿Cuál es su país de residencia?</legend>
+          <span class='progreso'>1 de <%= total_preguntas %></span>
+          <h4>¿Cuál es su país de residencia?</h4>
           <p>
             Esta información es útil para poder determinar si el incidente es considerado un delito
             informático en el país donde usted se encuentra. Sólo para Latinoamérica
@@ -17,7 +19,8 @@
           <%= boton_siguiente(2) %>
         </fieldset>
         <fieldset class="pregunta" data-numero='2'>
-          <legend>¿Qué tipo de incidente ha sufrido?</legend>
+          <span class='progreso'>2 de <%= total_preguntas %></span>
+          <h4>¿Qué tipo de incidente ha sufrido?</h4>
           <p>De acuerdo a su lugar de residencia, dicho
             incidente podrá ser considerado como un delito informático de acuerdo a
             su legislación vigente. Si usted lo desea, una vez finalizado el
@@ -32,10 +35,11 @@
 
         <!-- Preguntas dinamicas (creadas por panel de admin) -->
         <% numero_pregunta = 2 %>
-        <% Pregunta.all.each do |pregunta| %>
+        <% @preguntas.each do |pregunta| %>
           <% numero_pregunta += 1 %>
           <%= render partial: 'denuncias/pregunta',
-            locals: { pregunta: pregunta, form: f, numero: numero_pregunta } %>
+            locals: { pregunta: pregunta, form: f, numero: numero_pregunta,
+                      total_preguntas: total_preguntas } %>
         <% end %>
         <fieldset class="pregunta" data-numero='<%= numero_pregunta + 1 %>'>
           <span class="chico">ODILA no pretende ser un asesoramiento para el
