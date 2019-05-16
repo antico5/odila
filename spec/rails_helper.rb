@@ -30,15 +30,19 @@ require 'selenium/webdriver'
 ActiveRecord::Migration.maintain_test_schema!
 
 def short_wait
-  sleep 1
+  do_wait 2
 end
 
 def medium_wait
-  sleep 2
+  do_wait 4
 end
 
 def long_wait
-  sleep 5
+  do_wait 20
+end
+
+def do_wait(seconds)
+  sleep seconds unless ENV['SKIP_WAIT']
 end
 
 RSpec.configure do |config|
@@ -82,6 +86,7 @@ RSpec.configure do |config|
   Capybara.server = :puma, { Silent: true }
 
   config.before(:each) do
+    `pg_restore -U postgres -d odila_development -Fc -c database.bak`
     Capybara.reset_sessions!
     page.driver.browser.manage.window.maximize
   end
