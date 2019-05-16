@@ -67,6 +67,5 @@ RSpec.configure do |config|
   end
 
   Capybara.javascript_driver = :firefox_headless
-  Capybara.server= :puma
-  ActionDispatch::SystemTesting::Server.silence_puma = true
+  Capybara.server = :puma, { Silent: true }
 end

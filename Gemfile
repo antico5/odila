@@ -26,7 +26,7 @@ gem 'cancancan'
 group :development, :test do
   gem 'pry-rails'
   gem 'rspec-rails'
-  gem 'capybara'
+  gem 'capybara', '3.6.0'
   gem 'capybara-selenium'
   gem 'geckodriver-helper'
 end

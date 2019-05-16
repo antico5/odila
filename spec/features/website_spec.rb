@@ -12,7 +12,7 @@ RSpec.feature 'Website features' do
     visit '/difusion'
     expect(page).to have_text('COLABORA CON ESTE PROYECTO')
     expect(page).to have_text('Banner 234 x 80')
-    expect(page).to have_css('pre', 9)
+    expect(page).to have_css('pre')
   end
   scenario 'User visits the glosario page' do
     visit '/glosario'
