@@ -29,6 +29,18 @@ require 'selenium/webdriver'
 # If you are not using ActiveRecord, you can remove this line.
 ActiveRecord::Migration.maintain_test_schema!
 
+def short_wait
+  sleep 1
+end
+
+def medium_wait
+  sleep 2
+end
+
+def long_wait
+  sleep 5
+end
+
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
@@ -68,4 +80,9 @@ RSpec.configure do |config|
 
   Capybara.javascript_driver = :firefox_headless
   Capybara.server = :puma, { Silent: true }
+
+  config.before(:each) do
+    Capybara.reset_sessions!
+    page.driver.browser.manage.window.maximize
+  end
 end
