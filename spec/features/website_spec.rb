@@ -1,16 +1,16 @@
 require 'rails_helper'
 
 RSpec.feature 'Website features' do
-  scenario 'User visits the index page' do
+  scenario 'User visits the index page', js: true do
     visit '/'
-    expect(page).to have_text('Qué es ODILA?')
-    expect(page).to have_text('Denunciar delitos informáticos')
+    expect(page).to have_text('QUÉ ES ODILA?')
+    expect(page).to have_text('DENUNCIAR DELITOS INFORMÁTICOS')
     expect(page).to have_css('form.new_denuncia')
     expect(page).to have_css('form.new_consulta')
   end
-  scenario 'User visits the difusion page' do
+  scenario 'User visits the difusion page', js: true do
     visit '/difusion'
-    expect(page).to have_text('Colabora con este proyecto')
+    expect(page).to have_text('COLABORA CON ESTE PROYECTO')
     expect(page).to have_text('Banner 234 x 80')
     expect(page).to have_css('pre', 9)
   end

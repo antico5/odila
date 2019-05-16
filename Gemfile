@@ -19,7 +19,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Project gems
 gem 'simple_form'
 gem 'activeadmin'
-gem 'devise'
+gem 'devise', '4.5.0'
 gem 'cancancan'
 
 
@@ -27,6 +27,8 @@ group :development, :test do
   gem 'pry-rails'
   gem 'rspec-rails'
   gem 'capybara'
+  gem 'capybara-selenium'
+  gem 'geckodriver-helper'
 end
 
 group :development do
